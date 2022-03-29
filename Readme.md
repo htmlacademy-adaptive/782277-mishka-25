@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Михаил Беззапонный](https://up.htmlacademy.ru/adaptive/25/user/782277).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
