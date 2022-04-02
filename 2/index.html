@@ -10,8 +10,8 @@
     <header class="main-header">
       <div class="main-header__wrapper">
 
-        <a class="main-header__logo header-logo" href="#">
-          <img class="header-logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+        <a class="main-header__logo" href="#">
+          <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
         </a>
 
         <nav class="main-header__navigation main-navigation">
@@ -41,40 +41,38 @@
             </li>
           </ul>
         </nav>
+
+        <div class="main-header__submenu header-submenu">
+          <ul class="header-submenu__list">
+            <li class="header-submenu__item">
+              <a class="header-submenu__link" href="#">Новые поступления</a>
+            </li>
+            <li class="header-submenu__item">
+              <a class="header-submenu__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="header-submenu__delivery">Бесплатная доставка по России</p>
+        </div>
       </div>
     </header>
 
     <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин милых вещей ручной работы - «Мишка».</h1>
 
-      <header class="index-header">
-        <div class="index-header__wrapper">
-          <h2 class="visually-hidden">Категории милых вещей ручной работы.</h2>
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h2 class="intro__title title">Милые штуки ручной работы для дома</h2>
 
-          <div class="index-header__submenu header-submenu">
-            <ul class="header-submenu__list">
-              <li class="header-submenu__item">
-                <a class="header-submenu__link" href="#">Новые поступления</a>
-              </li>
-              <li class="header-submenu__item">
-                <a class="header-submenu__link" href="#">Распродажа</a>
-              </li>
-            </ul>
-            <p class="header-submenu__delivery submenu-delivery">Бесплатная доставка по России</p>
-          </div>
-
-          <p class="index-header__title title">Милые штуки ручной работы для дома</p>
-
-          <ul class="index-header__category header-category">
-            <li class="header-category__item header-category__item--interior">
-              <a class="header-category__link" href="#">Предметы интерьера</a>
+          <ul class="intro__category category-product">
+            <li class="category-product__item category-product__item--interior">
+              <a class="category-product__link" href="#">Предметы интерьера</a>
             </li>
-            <li class="header-category__item header-category__item--toy">
-              <a class="header-category__link" href="#">Детские игрушки</a>
+            <li class="category-product__item category-product__item--toy">
+              <a class="category-product__link" href="#">Детские игрушки</a>
             </li>
           </ul>
         </div>
-      </header>
+      </section>
 
       <article class="product">
         <div class="product__wrapper">
@@ -82,25 +80,25 @@
           <p class="product__label">Товар недели</p>
           <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
 
-          <dl class="product__list product-description">
-            <div class="product-description__row">
-              <dt class="product-description__property">Цвет:</dt>
-              <dd class="product-description__value">тиффани/серый</dd>
+          <dl class="product__description">
+            <div class="product__description-row">
+              <dt class="product__description-property">Цвет:</dt>
+              <dd class="product__description-value">тиффани/серый</dd>
             </div>
-            <div class="product-description__row">
-              <dt class="product-description__property">Диаметр:</dt>
-              <dd class="product-description__value">25 см</dd>
+            <div class="product__description-row">
+              <dt class="product__description-property">Диаметр:</dt>
+              <dd class="product__description-value">25 см</dd>
             </div>
-            <div class="product-description__row">
-              <dt class="product-description__property">Высота:</dt>
-              <dd class="product-description__value">15 см</dd>
+            <div class="product__description-row">
+              <dt class="product__description-property">Высота:</dt>
+              <dd class="product__description-value">15 см</dd>
             </div>
           </dl>
 
           <img class="product__image" src="img/products/knitted-basket-mobile.jpg" width="260" height="315" alt="Вязаная корзинка.">
 
           <p class="product__cost">Цена: 990 руб.</p>
-          <button class="product__order button" type="button">Заказать</button>
+          <a class="product__order button" href="#">Заказать</a>
         </div>
       </article>
 
@@ -139,7 +137,7 @@
             <blockquote class="reviews__item slider__item">
               <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author">
-                <span class="reviews__author-name">Елена  Красильникова</span>
+                <span class="reviews__author-name">Елена Красильникова</span>
                 <a class="reviews__author-email" href="mailto:@misssssiskras3">@misssssiskras3</a>
               </cite>
             </blockquote>
@@ -154,7 +152,7 @@
             </button>
           </div>
 
-          <button class="reviews__write button" type="button">Написать</button>
+          <a class="reviews__write button" href="#">Написать</a>
         </div>
       </section>
 
@@ -176,84 +174,70 @@
             <img class="main-map__image" src="img/map-mobile.jpg" width="320" height="454" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101.">
           </div>
 
-          <button class="contacts__write button" type="button">Напишите нам</button>
+          <a class="contacts__write button" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__logo footer-logo">
-          <a class="footer-logo__link" href="#">
-            <img class="footer-logo__image" src="img/mishka-logo-footer.svg" width="102" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
-          </a>
-        </div>
 
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">
-                <span class="visually-hidden">Мы в VKontakte.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">
-                <span class="visually-hidden">Мы в YouTube.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="#">
-                <span class="visually-hidden">Мы в Telegram.</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <a class="main-footer__logo" href="#">
+          <img class="main-footer__logo-image" src="img/mishka-logo-footer.svg" width="102" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+        </a>
 
-        <div class="main-footer__copyright copyright">
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">Мы в VKontakte.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Мы в YouTube.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#">
+              <span class="visually-hidden">Мы в Telegram.</span>
+            </a>
+          </li>
+        </ul>
+
+        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано в HTML Academy.">
-            <svg class="copyright__image" width="27" height="35" viewBox="0 0 27 35" fill="#63D1BB" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.7539.04443h-.0996l-13.44532 1.4V26.1444l13.44532 8 13.3457-8V1.44443l-13.2461-1.4ZM25.1077 12.1444 13.6543 5.34443v-.1h-.0996l-.0996-.1v.1L2.10129 12.1444V3.14443l11.45341-1.2 11.553 1.2v8.99997Zm-11.553-5.29997 11.4534 6.69997-4.4818 2.6-7.0712-4.2v1.4l5.8761 3.5-.8963.5-4.9798-3v1.4l3.7846 2.3-.7967.5-2.9879-1.8v1.4l1.8923 1.1-1.7927 1.1-11.35382-6.7L13.5547 6.84443ZM2.10129 15.1444l11.35381 6.8v1l-7.86799-4.7v1.4l7.96759 4.8v1.1l-7.96759-4.7v1.4l7.96759 4.8 8.0672-4.9v-5.2l3.3862-2v10l-11.4534 6.9-11.45341-6.8v-9.9Z"/>
-            </svg>
-          </a>
-        </div>
+          <img class="copyright__image" src="img/htmlacademy-logo.svg" width="27" height="35" alt="Логотип HTML Academy.">
+        </a>
       </div>
     </footer>
 
     <div class="main-modal main-modal--hidden">
-      <div class="main-modal__wrapper">
-        <section class="modal-cart">
-          <h2 class="modal-cart__title">Добавить в корзину</h2>
-          <form class="modal-cart__form cart-form" action="https://echo.htmlacademy.ru/" method="post">
+      <section class="main-modal__content modal-content">
+        <h2 class="modal-content__title">Добавить в корзину</h2>
+        <form class="modal-content__form cart-form" action="https://echo.htmlacademy.ru/" method="post">
 
-            <fieldset class="cart-form__fieldset">
-              <legend class="cart-form__legend">Выберите размер:</legend>
-              <ul class="cart-form__list">
-                <li class="cart-form__item">
-                  <label class="cart-form__label">
-                    <input class="cart-form__input" type="radio" name="size" value="S" checked>
-                    <span class="cart-form__text cart-form__text--checked">S</span>
-                  </label>
-                </li>
-                <li class="cart-form__item">
-                  <label class="cart-form__label">
-                    <input class="cart-form__input" type="radio" name="size" value="M">
-                    <span class="cart-form__text">M</span>
-                  </label>
-                </li>
-                <li class="cart-form__item">
-                  <label class="cart-form__label">
-                    <input class="cart-form__input" type="radio" name="size" value="L">
-                    <span class="cart-form__text">L</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+          <fieldset class="cart-form__fieldset fieldset-size">
+            <legend class="fieldset-size__legend">Выберите размер:</legend>
+            <div class="fieldset-size__list">
+              <label class="fieldset-size__item">
+                <input class="fieldset-size__input" type="radio" name="size" value="S" checked>
+                <span class="fieldset-size__label fieldset-size__label--checked">S</span>
+              </label>
+              <label class="fieldset-size__item">
+                <input class="fieldset-size__input" type="radio" name="size" value="M">
+                <span class="fieldset-size__label">M</span>
+              </label>
+              <label class="fieldset-size__item">
+                <input class="fieldset-size__input" type="radio" name="size" value="L">
+                <span class="fieldset-size__label">L</span>
+              </label>
+            </div>
+          </fieldset>
 
-            <button class="cart-form__add" type="submit">Добавить</button>
-          </form>
-        </section>
-      </div>
+          <button class="cart-form__add" type="submit">Добавить</button>
+        </form>
+      </section>
     </div>
+
   </body>
 </html>
