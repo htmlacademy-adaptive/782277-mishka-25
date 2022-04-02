@@ -217,20 +217,20 @@
 
           <fieldset class="cart-form__fieldset">
             <legend class="cart-form__legend">Выберите размер:</legend>
-            <div class="cart-form__list">
-              <label class="cart-form__item cart-form__item--checked">
-                <input class="cart-form__input" type="radio" name="size" value="S" checked>
-                <span class="cart-form__label">S</span>
-              </label>
-              <label class="cart-form__item">
-                <input class="cart-form__input" type="radio" name="size" value="M">
-                <span class="cart-form__label">M</span>
-              </label>
-              <label class="cart-form__item">
-                <input class="cart-form__input" type="radio" name="size" value="L">
-                <span class="cart-form__label">L</span>
-              </label>
-            </div>
+            <ul class="cart-form__list">
+              <li class="cart-form__item cart-form__item--checked">
+                <input class="cart-form__input" id="size-s" type="radio" name="size" value="S" checked>
+                <label class="cart-form__label" for="size-s">S</label>
+              </li>
+              <li class="cart-form__item">
+                <input class="cart-form__input" id="size-m" type="radio" name="size" value="M">
+                <label class="cart-form__label" for="size-m">M</label>
+              </li>
+              <li class="cart-form__item">
+                <input class="cart-form__input" id="size-l" type="radio" name="size" value="L">
+                <label class="cart-form__label" for="size-l">L</label>
+              </li>
+            </ul>
           </fieldset>
 
           <button class="cart-form__add" type="submit">Добавить</button>
