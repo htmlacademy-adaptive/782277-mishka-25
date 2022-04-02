@@ -10,7 +10,7 @@
     <header class="main-header">
       <div class="main-header__wrapper">
 
-        <a class="main-header__logo" href="#">
+        <a class="main-header__logo">
           <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
         </a>
 
@@ -182,7 +182,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
 
-        <a class="main-footer__logo" href="#">
+        <a class="main-footer__logo">
           <img class="main-footer__logo-image" src="img/mishka-logo-footer.svg" width="102" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
         </a>
 
@@ -216,20 +216,20 @@
         <h2 class="modal-content__title">Добавить в корзину</h2>
         <form class="modal-content__form cart-form" action="https://echo.htmlacademy.ru/" method="post">
 
-          <fieldset class="cart-form__fieldset fieldset-size">
-            <legend class="fieldset-size__legend">Выберите размер:</legend>
-            <div class="fieldset-size__list">
-              <label class="fieldset-size__item">
-                <input class="fieldset-size__input" type="radio" name="size" value="S" checked>
-                <span class="fieldset-size__label fieldset-size__label--checked">S</span>
+          <fieldset class="cart-form__fieldset">
+            <legend class="cart-form__legend">Выберите размер:</legend>
+            <div class="cart-form__list">
+              <label class="cart-form__item cart-form__item--checked">
+                <input class="cart-form__input" type="radio" name="size" value="S" checked>
+                <span class="cart-form__label">S</span>
               </label>
-              <label class="fieldset-size__item">
-                <input class="fieldset-size__input" type="radio" name="size" value="M">
-                <span class="fieldset-size__label">M</span>
+              <label class="cart-form__item">
+                <input class="cart-form__input" type="radio" name="size" value="M">
+                <span class="cart-form__label">M</span>
               </label>
-              <label class="fieldset-size__item">
-                <input class="fieldset-size__input" type="radio" name="size" value="L">
-                <span class="fieldset-size__label">L</span>
+              <label class="cart-form__item">
+                <input class="cart-form__input" type="radio" name="size" value="L">
+                <span class="cart-form__label">L</span>
               </label>
             </div>
           </fieldset>
