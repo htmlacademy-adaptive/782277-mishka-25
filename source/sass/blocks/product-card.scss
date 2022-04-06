@@ -1,0 +1,32 @@
+.product-card__image {
+  @include image-normalize;
+}
+
+.product-card__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: math.div(24, 17);
+  font-weight: 700;
+  color: #000000;
+}
+
+.product-card__link {
+  @include link-style;
+}
+
+.product-card__description {
+  margin: 0;
+  font-size: 13px;
+  line-height: math.div(30, 13);
+}
+
+.product-card__cost {
+  margin: 0;
+  line-height: math.div(24, 15);
+  font-weight: 700;
+  color: #000000;
+}
+
+.product-card__cart {
+  @include link-style;
+}

@@ -1,0 +1,11 @@
+.copyright__text {
+  margin: 0;
+  font-size: 19px;
+  line-height: math.div(18, 19);
+  font-weight: 700;
+  color: #000000;
+}
+
+.copyright__image {
+  @include image-normalize;
+}

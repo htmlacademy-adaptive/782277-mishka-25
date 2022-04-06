@@ -6,57 +6,57 @@
 
 @import "global/fonts.scss";
 @import "global/mixins.scss";
-
-@import "global/page.scss";
-@import "global/main-container.scss";
-@import "global/title.scss";
-@import "global/button.scss";
 @import "global/visually-hidden.scss";
 
-// Блоки main-header - основной header проекта
+@import "blocks/page.scss";
+@import "blocks/main-container.scss";
+@import "blocks/title.scss";
+@import "blocks/button.scss";
 
-@import "main-header/main-header.scss";
-@import "main-header/main-navigation.scss";
-@import "main-header/site-navigation.scss";
-@import "main-header/user-navigation.scss";
-@import "main-header/site-search.scss";
-@import "main-header/site-cart.scss";
-@import "main-header/header-submenu.scss";
+// Основной header проекта
 
-@import "main-header/intro.scss";
+@import "blocks/header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/site-navigation.scss";
+@import "blocks/user-navigation.scss";
+@import "blocks/site-search.scss";
+@import "blocks/site-cart.scss";
+@import "blocks/header-submenu.scss";
 
-// Блоки main-footer - основной footer проекта
+@import "blocks/intro.scss";
 
-@import "main-footer/main-footer.scss";
-@import "main-footer/social.scss";
-@import "main-footer/copyright.scss";
+// Основной footer проекта
 
-// Блоки main-modal - основное модальное оокно проекта
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
 
-@import "main-modal/main-modal.scss";
-@import "main-modal/modal-content.scss";
-@import "main-modal/cart-form.scss";
+// Основное модальное окно проекта
 
-// Блоки index - главная страница проекта
+@import "blocks/modal.scss";
+@import "blocks/modal-content.scss";
+@import "blocks/cart-form.scss";
 
-@import "page-index/category-product.scss";
-@import "page-index/product.scss";
-@import "page-index/advantages.scss";
-@import "page-index/reviews.scss";
-@import "page-index/slider.scss";
-@import "page-index/contacts.scss";
-@import "page-index/main-map.scss";
+// Главная страница проекта
 
-// Блоки catalog - страница каталога
+@import "blocks/category-product.scss";
+@import "blocks/product.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
 
-@import "page-catalog/catalog.scss";
-@import "page-catalog/product-card.scss";
-@import "page-catalog/production.scss";
-@import "page-catalog/video-player.scss";
+// Страница каталога
 
-// Блоки form - страница с формой заказа
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
+@import "blocks/production.scss";
+@import "blocks/video-player.scss";
 
-@import "page-form/main-form.scss";
-@import "page-form/order-form.scss";
+// Страница с формой заказа
+
+@import "blocks/form.scss";
+@import "blocks/order-form.scss";
 
 // stylelint-enable

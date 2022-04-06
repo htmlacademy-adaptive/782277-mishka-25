@@ -1,0 +1,26 @@
+.navigation {
+  font-size: 17px;
+  line-height: math.div(24, 17);
+  font-weight: 700;
+  color: #000000;
+}
+
+.navigation__logo {
+  @include link-style;
+}
+
+.navigation__logo-image {
+  @include image-normalize;
+}
+
+.navigation__toggle {
+  display: block;
+  padding: 0;
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+.navigation__list {
+  @include list-reset;
+}

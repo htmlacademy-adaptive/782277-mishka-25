@@ -8,19 +8,19 @@
   </head>
 
   <body class="page__body">
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <nav class="main-header__navigation main-navigation">
+    <header class="header">
+      <div class="header__wrapper">
+        <nav class="header__navigation navigation">
 
-          <a class="main-navigation__logo" href="index.html">
-            <img class="main-navigation__logo-image" src="img/mobile/logo/mishka-logo-header.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+          <a class="navigation__logo" href="index.html">
+            <img class="navigation__logo-image" src="img/mobile/logo/mishka-logo-header.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
           </a>
 
-          <button class="main-navigation__toggle" type="button">
+          <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
 
-          <ul class="main-navigation__list site-navigation">
+          <ul class="navigation__list site-navigation">
             <li class="site-navigation__item">
               <a class="site-navigation__link">Каталог товаров</a>
             </li>
@@ -29,7 +29,7 @@
             </li>
           </ul>
 
-          <ul class="main-navigation__list user-navigation">
+          <ul class="navigation__list user-navigation">
             <li class="user-navigation__item site-search">
               <a class="user-navigation__link site-search__link" href="#">
                 <span class="site-search__text site-search__text--hidden">Поиск по сайту</span>
@@ -43,7 +43,7 @@
           </ul>
         </nav>
 
-        <div class="main-header__submenu header-submenu">
+        <div class="header__submenu header-submenu">
           <ul class="header-submenu__list">
             <li class="header-submenu__item">
               <a class="header-submenu__link" href="#">Новые поступления</a>
@@ -60,7 +60,7 @@
     <main class="main-container">
 
       <section class="intro intro--inner">
-        <h1 class="intro__title title">Каталог товаров</h1>
+        <h1 class="intro__title title title--big">Каталог товаров</h1>
       </section>
 
       <section class="catalog">
@@ -110,7 +110,7 @@
           <h2 class="production__title">Процесс производства</h2>
 
           <div class="production__video video-player">
-            <video class="video-player__viewport" src="#" width="260" height="150" poster="img/video-mobile.jpg" preload="metadata"></video>
+            <video class="video-player__viewport" src="#" width="260" height="150" poster="img/mobile/video/video-preview.jpg" preload="metadata"></video>
             <button class="video-player__play" type="button">
               <span class="visually-hidden">Воспроизвести видео.</span>
             </button>
@@ -122,14 +122,14 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
+    <footer class="footer">
+      <div class="footer__wrapper">
 
-        <a class="main-footer__logo" href="index.html">
-          <img class="main-footer__logo-image" src="img/desktop/logo/mishka-logo-footer.svg" width="102" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+        <a class="footer__logo" href="index.html">
+          <img class="footer__logo-image" src="img/desktop/logo/mishka-logo-footer.svg" width="102" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
         </a>
 
-        <ul class="main-footer__social social">
+        <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">
               <span class="visually-hidden">Мы в VKontakte.</span>
@@ -147,15 +147,15 @@
           </li>
         </ul>
 
-        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">Разработано</p>
           <img class="copyright__image" src="img/desktop/logo/htmlacademy-logo.svg" width="27" height="35" alt="Логотип HTML Academy.">
         </a>
       </div>
     </footer>
 
-    <div class="main-modal main-modal--hidden">
-      <section class="main-modal__content modal-content">
+    <div class="modal modal--hidden">
+      <section class="modal__content modal-content">
         <h2 class="modal-content__title">Добавить в корзину</h2>
         <form class="modal-content__form cart-form" action="https://echo.htmlacademy.ru/" method="post">
 

@@ -4,10 +4,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &--inner {
+    background-image: none;
+  }
 }
 
 .intro__title {
-  @include title-style;
+  margin: 0;
 }
 
 .intro__category {

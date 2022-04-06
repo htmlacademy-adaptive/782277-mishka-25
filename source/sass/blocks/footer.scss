@@ -1,0 +1,11 @@
+.footer__logo-image {
+  @include image-normalize;
+}
+
+.footer__social {
+  @include list-reset;
+}
+
+.footer__copyright {
+  @include link-style;
+}
