@@ -1,0 +1,543 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.title {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+.title--big {
+  font-size: 27px;
+  line-height: 1.1111111111;
+}
+
+.button {
+  display: block;
+  padding: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.1111111111;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  cursor: pointer;
+}
+
+.navigation {
+  font-size: 17px;
+  line-height: 1.4117647059;
+  font-weight: 700;
+  color: #000000;
+}
+
+.navigation__logo {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation__logo-image {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.navigation__toggle {
+  display: block;
+  padding: 0;
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-navigation__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.user-navigation__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header-submenu {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #000000;
+}
+
+.header-submenu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-submenu__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header-submenu__delivery {
+  margin: 0;
+  font-weight: 400;
+  text-align: right;
+  color: #444444;
+}
+
+.intro {
+  background-color: #f1f1f1;
+  background-image: url("../../img/mobile/decor/mishka-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.intro--inner {
+  background-image: none;
+}
+
+.intro__title {
+  margin: 0;
+}
+
+.intro__category {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__logo-image {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.footer__social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__copyright {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.social__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.copyright__text {
+  margin: 0;
+  font-size: 19px;
+  line-height: 0.9473684211;
+  font-weight: 700;
+  color: #000000;
+}
+
+.copyright__image {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.modal-content__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.cart-form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.cart-form__legend {
+  padding: 0;
+  text-align: center;
+}
+
+.cart-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cart-form__label {
+  font-size: 17px;
+  line-height: 0.9411764706;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cart-form__add {
+  display: block;
+  width: 260px;
+  padding: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 0.9411764706;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #63d1bb;
+  border: 0;
+  cursor: pointer;
+}
+
+.category-product__item {
+  color: #ffffff;
+}
+.category-product__item--interior {
+  background-color: #63d1bb;
+}
+.category-product__item--toy {
+  background-color: #56c3b2;
+}
+
+.category-product__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 19px;
+  line-height: 1.2631578947;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.product__title {
+  margin: 0;
+}
+
+.product__label {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.1764705882;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.product__text {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.product__description {
+  margin: 0;
+  line-height: 1.3333333333;
+}
+
+.product__description-value {
+  margin: 0;
+}
+
+.product__image {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.product__cost {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.4117647059;
+  font-weight: 700;
+  text-align: center;
+}
+
+.product__order {
+  width: 260px;
+}
+
+.advantages__title {
+  margin: 0;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  font-size: 17px;
+  line-height: 1.1764705882;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reviews__title {
+  margin: 0;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+}
+
+.reviews__author {
+  font-style: normal;
+  font-size: 17px;
+}
+
+.reviews__author-name {
+  display: block;
+  line-height: 1.4117647059;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reviews__author-email {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  line-height: 1.7647058824;
+  color: #444444;
+}
+
+.reviews__write {
+  width: 260px;
+}
+
+.slider__toggle {
+  display: block;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  cursor: pointer;
+}
+
+.contacts__title {
+  margin: 0;
+}
+
+.contacts__list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2.1428571429;
+}
+
+.contacts__item {
+  margin: 0;
+}
+
+.contacts__email {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  color: #444444;
+}
+
+.contacts__write {
+  width: 260px;
+}
+
+.map__image {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-card__image {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.product-card__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.4117647059;
+  font-weight: 700;
+  color: #000000;
+}
+
+.product-card__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.product-card__description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 2.3076923077;
+}
+
+.product-card__cost {
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #000000;
+}
+
+.product-card__cart {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.production__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.4117647059;
+  font-weight: 700;
+  color: #000000;
+}
+
+.production__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8461538462;
+}
+
+.production__order {
+  width: 192px;
+  padding: 18px 10px;
+  line-height: 0.8888888889;
+}
+
+.video-player__play {
+  display: block;
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+.form__intro {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8461538462;
+}
+
+.order-form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.order-form__legend {
+  padding: 0;
+  font-size: 17px;
+  line-height: 0.9411764706;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.order-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order-form__label {
+  font-size: 17px;
+  line-height: 1.0588235294;
+  font-weight: 700;
+  color: #000000;
+}
+
+.order-form__input,
+.order-form__textarea {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 1.0588235294;
+  font-weight: 400;
+  color: #000000;
+}
+.order-form__input::placeholder,
+.order-form__textarea::placeholder {
+  opacity: 0.3;
+}
+
+.order-form__info {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.1428571429;
+}
+
+.order-form__send {
+  width: 260px;
+  padding: 18px;
+  font-size: 17px;
+  line-height: 0.9411764706;
+}
+/*# sourceMappingURL=style.css.map */
