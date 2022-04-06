@@ -1,0 +1,7 @@
+.category-product__link {
+  @include link-style;
+  font-size: 20px;
+  line-height:  math.div(30, 20);
+  font-weight: 700;
+  color: #FFFFFF;
+}

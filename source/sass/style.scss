@@ -1,1 +1,62 @@
-// Начните писать стили здесь
+// stylelint-disable
+
+@use "sass:math";
+
+// Общие блоки проекта
+
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+
+@import "global/page.scss";
+@import "global/main-container.scss";
+@import "global/title.scss";
+@import "global/button.scss";
+@import "global/visually-hidden.scss";
+
+// Блоки main-header - основной header проекта
+
+@import "main-header/main-header.scss";
+@import "main-header/main-navigation.scss";
+@import "main-header/site-navigation.scss";
+@import "main-header/user-navigation.scss";
+@import "main-header/site-search.scss";
+@import "main-header/site-cart.scss";
+@import "main-header/header-submenu.scss";
+
+@import "main-header/intro.scss";
+
+// Блоки main-footer - основной footer проекта
+
+@import "main-footer/main-footer.scss";
+@import "main-footer/social.scss";
+@import "main-footer/copyright.scss";
+
+// Блоки main-modal - основное модальное оокно проекта
+
+@import "main-modal/main-modal.scss";
+@import "main-modal/modal-content.scss";
+@import "main-modal/cart-form.scss";
+
+// Блоки index - главная страница проекта
+
+@import "page-index/category-product.scss";
+@import "page-index/product.scss";
+@import "page-index/advantages.scss";
+@import "page-index/reviews.scss";
+@import "page-index/slider.scss";
+@import "page-index/contacts.scss";
+@import "page-index/main-map.scss";
+
+// Блоки catalog - страница каталога
+
+@import "page-catalog/catalog.scss";
+@import "page-catalog/product-card.scss";
+@import "page-catalog/production.scss";
+@import "page-catalog/video-player.scss";
+
+// Блоки form - страница с формой заказа
+
+@import "page-form/main-form.scss";
+@import "page-form/order-form.scss";
+
+// stylelint-enable

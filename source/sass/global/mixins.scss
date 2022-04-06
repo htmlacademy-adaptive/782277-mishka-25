@@ -1,0 +1,56 @@
+@mixin image-normalize {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin title-style {
+  margin: 0;
+  font-size: 43px;
+  line-height: math.div(50, 43);
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+@mixin link-style {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+@mixin button-style {
+  display: block;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

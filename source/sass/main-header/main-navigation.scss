@@ -1,0 +1,22 @@
+.main-navigation {
+  font-size: 17px;
+  line-height: math.div(24, 17);
+  font-weight: 700;
+  color: #000000;
+}
+
+.main-navigation__logo {
+  @include link-style;
+}
+
+.main-navigation__logo-image {
+  @include image-normalize;
+}
+
+.main-navigation__toggle {
+  @include button-style;
+}
+
+.main-navigation__list {
+  @include list-reset;
+}

@@ -1,0 +1,20 @@
+.header-submenu {
+  font-size: 15px;
+  line-height: math.div(24, 15);
+  font-weight: 700;
+  color: #000000;
+}
+
+.header-submenu__list {
+  @include list-reset;
+}
+
+.header-submenu__link {
+  @include link-style;
+}
+
+.header-submenu__delivery {
+  margin: 0;
+  font-weight: 400;
+  color: #444444;
+}
