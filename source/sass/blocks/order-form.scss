@@ -26,7 +26,7 @@
 
 .order-form__input,
 .order-form__textarea {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-input;
   font-style: normal;
   font-size: 17px;
   line-height: math.div(18, 17);

@@ -1,7 +1,7 @@
 .button {
   display: block;
   padding: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-button;
   font-style: normal;
   font-size: 18px;
   line-height: math.div(20, 18);
