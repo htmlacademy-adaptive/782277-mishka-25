@@ -1,0 +1,22 @@
+.contacts__title {
+  margin: 0;
+}
+
+.contacts__list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: math.div(30, 14);
+}
+
+.contacts__item {
+  margin: 0;
+}
+
+.contacts__email {
+  @include link-style;
+  color: #444444;
+}
+
+.contacts__write {
+  width: 260px;
+}

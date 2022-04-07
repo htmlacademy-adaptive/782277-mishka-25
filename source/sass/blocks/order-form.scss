@@ -1,0 +1,52 @@
+.order-form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.order-form__legend {
+  padding: 0;
+  font-size: 17px;
+  line-height: math.div(16, 17);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.order-form__list {
+  @include list-reset;
+}
+
+.order-form__label {
+  font-size: 17px;
+  line-height: math.div(18, 17);
+  font-weight: 700;
+  color: #000000;
+}
+
+.order-form__input,
+.order-form__textarea {
+  font-family: $font-input;
+  font-style: normal;
+  font-size: 17px;
+  line-height: math.div(18, 17);
+  font-weight: 400;
+  color: #000000;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.order-form__info {
+  margin: 0;
+  font-size: 14px;
+  line-height: math.div(16, 14);
+}
+
+.order-form__send {
+  width: 260px;
+  padding: 18px;
+  font-size: 17px;
+  line-height: math.div(16, 17);
+}

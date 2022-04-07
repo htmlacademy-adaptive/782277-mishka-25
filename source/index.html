@@ -2,23 +2,25 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page__body">
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <nav class="main-header__navigation main-navigation">
+    <header class="header">
+      <div class="header__wrapper">
+        <nav class="header__navigation navigation">
 
-          <a class="main-navigation__logo">
-            <img class="main-navigation__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+          <a class="navigation__logo">
+            <img class="navigation__logo-image" src="img/mobile/logo/mishka-logo-header.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
           </a>
 
-          <button class="main-navigation__toggle" type="button">
+          <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
 
-          <ul class="main-navigation__list site-navigation">
+          <ul class="navigation__list site-navigation">
             <li class="site-navigation__item">
               <a class="site-navigation__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -27,7 +29,7 @@
             </li>
           </ul>
 
-          <ul class="main-navigation__list user-navigation">
+          <ul class="navigation__list user-navigation">
             <li class="user-navigation__item site-search">
               <a class="user-navigation__link site-search__link" href="#">
                 <span class="site-search__text site-search__text--hidden">Поиск по сайту</span>
@@ -41,7 +43,7 @@
           </ul>
         </nav>
 
-        <div class="main-header__submenu header-submenu">
+        <div class="header__submenu header-submenu">
           <ul class="header-submenu__list">
             <li class="header-submenu__item">
               <a class="header-submenu__link" href="#">Новые поступления</a>
@@ -60,7 +62,7 @@
 
       <section class="intro">
         <div class="intro__wrapper">
-          <h2 class="intro__title title">Милые штуки ручной работы для дома</h2>
+          <h2 class="intro__title title title--big">Милые штуки ручной работы для дома</h2>
 
           <ul class="intro__category category-product">
             <li class="category-product__item category-product__item--interior">
@@ -94,7 +96,7 @@
             </div>
           </dl>
 
-          <img class="product__image" src="img/products/knitted-basket-mobile.jpg" width="260" height="315" alt="Вязаная корзинка.">
+          <img class="product__image" src="img/mobile/products/knitted-basket.jpg" width="260" height="315" alt="Вязаная корзинка.">
 
           <p class="product__cost">Цена: 990 руб.</p>
           <a class="product__order button" href="#">Заказать</a>
@@ -169,8 +171,8 @@
             </p>
           </address>
 
-          <div class="contacts__map main-map">
-            <img class="main-map__image" src="img/map-mobile.jpg" width="320" height="454" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101.">
+          <div class="contacts__map map">
+            <img class="map__image" src="img/mobile/map/map-image.jpg" width="320" height="454" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101.">
           </div>
 
           <a class="contacts__write button" href="#">Напишите нам</a>
@@ -178,14 +180,14 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
+    <footer class="footer">
+      <div class="footer__wrapper">
 
-        <a class="main-footer__logo">
-          <img class="main-footer__logo-image" src="img/mishka-logo-footer.svg" width="102" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+        <a class="footer__logo">
+          <img class="footer__logo-image" src="img/desktop/logo/mishka-logo-footer.svg" width="102" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
         </a>
 
-        <ul class="main-footer__social social">
+        <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">
               <span class="visually-hidden">Мы в VKontakte.</span>
@@ -203,15 +205,15 @@
           </li>
         </ul>
 
-        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">Разработано</p>
-          <img class="copyright__image" src="img/htmlacademy-logo.svg" width="27" height="35" alt="Логотип HTML Academy.">
+          <img class="copyright__image" src="img/desktop/logo/htmlacademy-logo.svg" width="27" height="35" alt="Логотип HTML Academy.">
         </a>
       </div>
     </footer>
 
-    <div class="main-modal main-modal--hidden">
-      <section class="main-modal__content modal-content">
+    <div class="modal modal--hidden">
+      <section class="modal__content modal-content">
         <h2 class="modal-content__title">Добавить в корзину</h2>
         <form class="modal-content__form cart-form" action="https://echo.htmlacademy.ru/" method="post">
 

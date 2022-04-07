@@ -1,0 +1,37 @@
+.reviews__title {
+  margin: 0;
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+}
+
+.reviews__author {
+  font-style: normal;
+  font-size: 17px;
+}
+
+.reviews__author-name {
+  display: block;
+  line-height: math.div(24, 17);
+  font-weight: 700;
+  color: #000000;
+}
+
+.reviews__author-email {
+  @include link-style;
+  line-height: math.div(30, 17);
+  color: #444444;
+}
+
+.reviews__write {
+  width: 260px;
+}

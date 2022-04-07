@@ -1,0 +1,19 @@
+.production__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: math.div(24, 17);
+  font-weight: 700;
+  color: #000000;
+}
+
+.production__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: math.div(24, 13);
+}
+
+.production__order {
+  width: 192px;
+  padding: 18px 10px;
+  line-height: math.div(16, 18);
+}

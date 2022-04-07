@@ -1,0 +1,12 @@
+.title {
+  font-size: 25px;
+  line-height: math.div(30, 25);
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+
+  &--big {
+    font-size: 27px;
+    line-height: math.div(30, 27);
+  }
+}

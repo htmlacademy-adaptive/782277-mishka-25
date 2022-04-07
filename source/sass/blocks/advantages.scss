@@ -1,0 +1,14 @@
+.advantages__title {
+  margin: 0;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  font-size: 17px;
+  line-height: math.div(20, 17);
+  font-weight: 700;
+  color: #000000;
+}
