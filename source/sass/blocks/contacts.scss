@@ -14,7 +14,7 @@
 
 .contacts__email {
   @include link-style;
-  color: #444444;
+  color: $color-main;
 }
 
 .contacts__write {

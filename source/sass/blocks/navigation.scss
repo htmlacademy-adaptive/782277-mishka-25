@@ -2,7 +2,7 @@
   font-size: 17px;
   line-height: math.div(24, 17);
   font-weight: 700;
-  color: #000000;
+  color: $color-title;
 }
 
 .navigation__logo {
@@ -16,7 +16,7 @@
 .navigation__toggle {
   display: block;
   padding: 0;
-  background-color: #ffffff;
+  background-color: $color-navigation-button-background;
   border: 0;
   cursor: pointer;
 }

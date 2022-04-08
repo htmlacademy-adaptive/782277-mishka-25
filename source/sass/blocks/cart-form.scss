@@ -32,8 +32,8 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #63d1bb;
+  color: $color-modal-button-text;
+  background-color: $color-modal-button-background;
   border: 0;
   cursor: pointer;
 }

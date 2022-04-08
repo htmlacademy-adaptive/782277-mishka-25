@@ -13,7 +13,7 @@
 @mixin link-style {
   display: block;
   text-decoration: none;
-  color: #000000;
+  color: $color-link;
 }
 
 @mixin visually-hidden {

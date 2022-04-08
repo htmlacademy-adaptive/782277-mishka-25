@@ -1,7 +1,7 @@
 .slider__toggle {
   display: block;
   padding: 0;
-  background-color: #ffffff;
-  border: 1px solid #ececec;
+  background-color: $color-slider-button-background;
+  border: 1px solid $color-slider-button-border;
   cursor: pointer;
 }

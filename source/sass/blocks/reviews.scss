@@ -23,13 +23,13 @@
   display: block;
   line-height: math.div(24, 17);
   font-weight: 700;
-  color: #000000;
+  color: $color-title;
 }
 
 .reviews__author-email {
   @include link-style;
   line-height: math.div(30, 17);
-  color: #444444;
+  color: $color-main;
 }
 
 .reviews__write {
