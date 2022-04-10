@@ -997,7 +997,7 @@
   .reviews {
     margin: 0 auto;
     background-color: #ffffff;
-    background-image: url("../../img/tablet/decor/review-background.jpg");
+    background-image: url("../img/tablet/decor/review-background.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: auto;
@@ -1046,7 +1046,7 @@
 @media (min-width: 1150px) {
   .reviews {
     max-width: 1150px;
-    background-image: url("../../img/tablet/decor/review-background.jpg");
+    background-image: url("../img/tablet/decor/review-background.jpg");
   }
 
   .reviews__wrapper {
