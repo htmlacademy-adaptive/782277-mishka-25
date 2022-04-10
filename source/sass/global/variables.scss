@@ -4,8 +4,15 @@ $font-main: "Open Sans", sans-serif;
 $font-button: $font-main;
 $font-input: $font-main;
 
+// Ширина viewport для разных устройств
+
+$small-width: 320px;
+$medium-width: 768px;
+$large-width: 1150px;
+
 // Цвета проекта - оттенки серого
 
+$transparent: rgba(0, 0, 0, 0);
 $color-inverse: #ffffff;
 $gray-light: #f1f1f1;
 $gray: #ececec;
@@ -20,7 +27,7 @@ $color-base: #59d5bc;
 $color-dark: #56c3b2;
 $color-darken: #46c1ae;
 
-// Цвета компонентов
+// Общие цвета компонентов
 
 $color-main: $gray-dark;
 $color-background: $color-inverse;
@@ -43,7 +50,7 @@ $color-main-button-text: $gray-dark;
 $color-main-button-background: $color-inverse;
 $color-main-button-border: $gray-dark;
 
-$color-navigation-button-background: $color-inverse;
+$color-navigation-button-background: $transparent;
 
 $color-slider-button-background: $color-inverse;
 $color-slider-button-border: $gray;

@@ -1,3 +1,19 @@
 .map__image {
   @include image-normalize;
+  width: 320px;
+  height: 454px;
+}
+
+@media (min-width: $medium-width) {
+  .map__image {
+    width: 768px;
+    height: 457px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .map__image {
+    width: 527px;
+    height: 457px;
+  }
 }

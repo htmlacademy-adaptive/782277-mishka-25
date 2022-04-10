@@ -1,5 +1,12 @@
+.copyright {
+  @include link-style;
+  display: flex;
+  align-items: center;
+}
+
 .copyright__text {
   margin: 0;
+  margin-right: 20px;
   font-size: 19px;
   line-height: math.div(18, 19);
   font-weight: 700;

@@ -1,14 +1,86 @@
+.advantages__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .advantages__title {
   margin: 0;
+  margin-bottom: 22px;
 }
 
 .advantages__list {
   @include list-reset;
+  display: grid;
+  grid-template-areas:
+    "item-eco  "
+    "item-price"
+    "item-like "
+    "item-knit "
+    "item-maker"
+    "item-gift ";
+  grid-template-columns: 1fr;
 }
 
 .advantages__item {
+  min-height: 100px;
+  padding-top: 60px;
   font-size: 17px;
   line-height: math.div(20, 17);
   font-weight: 700;
   color: $color-title;
+
+  &--eco {
+    grid-area: item-eco;
+  }
+
+  &--price {
+    grid-area: item-price;
+  }
+
+  &--like {
+    grid-area: item-like;
+  }
+
+  &--knit {
+    grid-area: item-knit;
+  }
+
+  &--maker {
+    grid-area: item-maker;
+  }
+
+  &--gift {
+    grid-area: item-gift;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+@media (min-width: $medium-width) {
+  .advantages__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .advantages__title {
+    margin-bottom: 40px;
+  }
+
+  .advantages__list {
+    grid-template-areas:
+      "item-eco   item-knit "
+      "item-price item-maker"
+      "item-like  item-gift ";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+  }
+
+  .advantages__item {
+    font-size: 20px;
+    line-height: math.div(22, 20);
+  }
 }

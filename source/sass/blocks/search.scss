@@ -1,0 +1,12 @@
+@media (min-width: $medium-width) {
+  .search__link {
+    width: 83px;
+    height: 88px;
+    padding: 32px;
+    background-color: #000000;
+  }
+
+  .search__text {
+    @include visually-hidden;
+  }
+}

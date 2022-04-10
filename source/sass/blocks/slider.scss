@@ -1,7 +1,13 @@
+.slider__toggles {
+  display: flex;
+}
+
 .slider__toggle {
   display: block;
+  width: 130px;
+  height: 52px;
   padding: 0;
-  background-color: $color-slider-button-background;
+  background-color: #000000;
   border: 1px solid $color-slider-button-border;
   cursor: pointer;
 }

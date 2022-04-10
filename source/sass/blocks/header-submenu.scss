@@ -19,3 +19,30 @@
   text-align: right;
   color: $color-main;
 }
+
+@media (min-width: $medium-width) {
+  .header-submenu__list {
+    display: none;
+  }
+}
+
+@media (min-width: $large-width) {
+  .header-submenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1050px;
+  }
+
+  .header-submenu__list {
+    display: flex;
+  }
+
+  .header-submenu__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .header-submenu__link {
+    padding: 20px 0;
+  }
+}

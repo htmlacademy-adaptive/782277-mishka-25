@@ -1,24 +1,44 @@
 .cart-form__fieldset {
   padding: 0;
   margin: 0;
+  margin-bottom: 30px;
   border: 0;
 }
 
 .cart-form__legend {
+  margin-bottom: 22px;
   padding: 0;
   text-align: center;
 }
 
 .cart-form__list {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart-form__item {
+  display: flex;
+  width: 82px;
+  min-height: 52px;
+  border: 2px solid #444444;
+}
+
+.cart-form__item:not(:last-child) {
+  margin-right: 6px;
 }
 
 .cart-form__label {
+  margin: auto;
   font-size: 17px;
   line-height: math.div(16, 17);
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+}
+
+.cart-form__input {
+  @include visually-hidden;
 }
 
 .cart-form__add {
@@ -36,4 +56,19 @@
   background-color: $color-modal-button-background;
   border: 0;
   cursor: pointer;
+}
+
+@media (min-width: $medium-width) {
+  .cart-form__legend {
+    font-size: 17px;
+    line-height: math.div(30, 17);
+  }
+
+  .cart-form__item {
+    width: 112px;
+  }
+
+  .cart-form__add {
+    width: 350px;
+  }
 }

@@ -1,15 +1,38 @@
+.contacts__wrapper {
+  display: grid;
+  grid-template-areas:
+    "contact-title  "
+    "contact-address"
+    "contact-map    "
+    "contact-button ";
+  grid-template-columns: 1fr;
+  width: 320px;
+  margin: 0 auto;
+}
+
 .contacts__title {
+  grid-area: contact-title;
   margin: 0;
+  margin-bottom: 28px;
 }
 
 .contacts__list {
+  grid-area: contact-address;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 62px;
   font-style: normal;
   font-size: 14px;
   line-height: math.div(30, 14);
 }
 
 .contacts__item {
+  display: flex;
   margin: 0;
+}
+
+.contacts__text {
+  margin-right: 20px;
 }
 
 .contacts__email {
@@ -17,6 +40,48 @@
   color: $color-main;
 }
 
+.contacts__map {
+  grid-area: contact-map;
+  margin-bottom: 42px;
+}
+
 .contacts__write {
+  grid-area: contact-button;
+  align-self: start;
   width: 260px;
+}
+
+@media (min-width: $medium-width) {
+  .contacts__wrapper {
+    width: 768px;
+  }
+
+  .contacts__list {
+    flex-direction: row;
+    font-size: 17px;
+    line-height: math.div(30, 14);
+  }
+
+  .contacts__item {
+    width: 332px;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .contacts__wrapper {
+    grid-template-areas:
+      ". contact-title   contact-map"
+      ". contact-address contact-map"
+      ". contact-button  contact-map";
+    grid-template-columns: 120px 1fr 527px;
+    width: 1150px;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+  }
 }
