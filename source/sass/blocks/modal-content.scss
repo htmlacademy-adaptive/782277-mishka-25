@@ -5,9 +5,9 @@
   width: 320px;
   min-height: 336px;
   padding: 28px 30px;
-  background-color: #ffffff;
-  border: 1px solid #c6c6c6;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  background-color: $color-modal-background;
+  border: 1px solid $color-modal-border;
+  box-shadow: 0 5px 10px $color-modal-shadow;
 }
 
 .modal-content__title {

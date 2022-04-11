@@ -1,14 +1,5 @@
 .intro {
-  margin: 0 auto;
-  background-color: $color-background-gray;
-  background-image: url("../img/mobile/decor/mishka-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  &--inner {
-    background-image: none;
-  }
+  background-color: $color-intro-background;
 }
 
 .intro__wrapper {
@@ -19,6 +10,11 @@
   min-height: 488px;
   margin: 0 auto;
   padding-top: 72px;
+  background-color: $color-intro-background;
+  background-image: url("../img/mobile/decor/mishka-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .intro__title {
@@ -28,14 +24,11 @@
 }
 
 @media (min-width: $medium-width) {
-  .intro {
-    background-image: url("../img/tablet/decor/mishka-background.jpg");
-  }
-
   .intro__wrapper {
     width: 768px;
     min-height: 744px;
     padding-top: 72px;
+    background-image: url("../img/tablet/decor/mishka-background.jpg");
   }
 
   .intro__title {
@@ -44,13 +37,9 @@
 }
 
 @media (min-width: $large-width) {
-  .intro {
-    max-width: 1150px;
-    background-image: url("../img/desktop/decor/mishka-background.jpg");
-  }
-
   .intro__wrapper {
     width: 1150px;
+    background-image: url("../img/desktop/decor/mishka-background.jpg");
   }
 
   .intro__title {

@@ -1,3 +1,7 @@
+.footer {
+  background-color: $color-footer-background;
+}
+
 .footer__wrapper {
   display: grid;
   grid-template-areas:
@@ -8,7 +12,6 @@
   width: 320px;
   margin: 0 auto;
   padding: 30px;
-  background-color: $color-background-gray;
 }
 
 .footer__logo {

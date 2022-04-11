@@ -1,12 +1,11 @@
 .contacts__wrapper {
   display: grid;
   grid-template-areas:
-    "contact-title  "
-    "contact-address"
-    "contact-map    "
-    "contact-button ";
-  grid-template-columns: 1fr;
-  width: 320px;
+    ".           contact-title   contact-title   .          "
+    ".           contact-address contact-address .          "
+    "contact-map contact-map     contact-map     contact-map"
+    ".           contact-button  contact-button  .          ";
+  grid-template-columns: 1fr 160px 160px 1fr;
   margin: 0 auto;
 }
 
@@ -55,7 +54,7 @@
 
 @media (min-width: $medium-width) {
   .contacts__wrapper {
-    width: 768px;
+    grid-template-columns: 1fr 384px 384px 1fr;
   }
 
   .contacts__title {
@@ -88,8 +87,9 @@
       ". contact-title   contact-map"
       ". contact-address contact-map"
       ". contact-button  contact-map";
-    grid-template-columns: 120px 1fr 527px;
+    grid-template-columns: 120px 403px 527px;
     width: 1150px;
+    padding: 0 50px;
   }
 
   .contacts__list {

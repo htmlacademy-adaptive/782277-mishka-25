@@ -7,8 +7,8 @@
 
 .user-navigation__item {
   box-shadow:
-    0 1px 0 #ececec,
-    inset 0 1px 0 #ececec;
+    0 1px 0 $color-nav-shadow,
+    inset 0 1px 0 $color-nav-shadow;
 }
 
 .user-navigation__link {

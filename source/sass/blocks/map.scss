@@ -1,7 +1,12 @@
+.map {
+  display: flex;
+}
+
 .map__image {
   @include image-normalize;
   width: 320px;
   height: 454px;
+  margin: auto;
 }
 
 @media (min-width: $medium-width) {

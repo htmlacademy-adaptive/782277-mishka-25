@@ -21,7 +21,7 @@
   display: flex;
   width: 82px;
   min-height: 52px;
-  border: 2px solid #444444;
+  border: 2px solid $color-modal-item-border;
 }
 
 .cart-form__item:not(:last-child) {
