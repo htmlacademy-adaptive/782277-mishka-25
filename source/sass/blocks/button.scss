@@ -9,8 +9,8 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #444444;
-  background-color: #ffffff;
-  border: 2px solid #444444;
+  color: $color-button-text;
+  background-color: $color-button-background;
+  border: 2px solid $color-button-border;
   cursor: pointer;
 }

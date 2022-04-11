@@ -1,19 +1,48 @@
 .intro {
-  background-color: #f1f1f1;
+  background-color: $color-intro-background;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+  min-height: 488px;
+  margin: 0 auto;
+  padding-top: 72px;
+  background-color: $color-intro-background;
   background-image: url("../img/mobile/decor/mishka-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  &--inner {
-    background-image: none;
-  }
 }
 
 .intro__title {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.intro__category {
-  @include list-reset;
+@media (min-width: $medium-width) {
+  .intro__wrapper {
+    width: 768px;
+    min-height: 744px;
+    padding-top: 72px;
+    background-image: url("../img/tablet/decor/mishka-background.jpg");
+  }
+
+  .intro__title {
+    width: 668px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .intro__wrapper {
+    width: 1150px;
+    background-image: url("../img/desktop/decor/mishka-background.jpg");
+  }
+
+  .intro__title {
+    width: 700px;
+  }
 }

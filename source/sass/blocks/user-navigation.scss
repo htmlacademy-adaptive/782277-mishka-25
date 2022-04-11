@@ -1,3 +1,40 @@
+.user-navigation {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-navigation__item {
+  box-shadow:
+    0 1px 0 $color-nav-shadow,
+    inset 0 1px 0 $color-nav-shadow;
+}
+
 .user-navigation__link {
   @include link-style;
+  padding: 28px;
+  text-align: center;
+}
+
+@media (min-width: $medium-width) {
+  .user-navigation {
+    flex-direction: row;
+  }
+
+  .user-navigation__item {
+    box-shadow: none;
+  }
+
+  .user-navigation__link {
+    padding: 32px 0;
+    padding-left: 54px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .user-navigation__link {
+    padding: 16px 0;
+    padding-left: 54px;
+  }
 }

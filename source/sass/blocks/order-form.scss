@@ -10,7 +10,7 @@
   line-height: math.div(16, 17);
   font-weight: 700;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $color-form-fieldset;
 }
 
 .order-form__list {
@@ -21,7 +21,7 @@
   font-size: 17px;
   line-height: math.div(18, 17);
   font-weight: 700;
-  color: #000000;
+  color: $color-form-label;
 }
 
 .order-form__input,
@@ -31,7 +31,7 @@
   font-size: 17px;
   line-height: math.div(18, 17);
   font-weight: 400;
-  color: #000000;
+  color: $color-form-input;
 
   &::placeholder {
     opacity: 0.3;

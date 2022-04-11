@@ -7,7 +7,7 @@
   font-size: 17px;
   line-height: math.div(24, 17);
   font-weight: 700;
-  color: #000000;
+  color: $color-title;
 }
 
 .product-card__link {
@@ -24,7 +24,7 @@
   margin: 0;
   line-height: math.div(24, 15);
   font-weight: 700;
-  color: #000000;
+  color: $color-title;
 }
 
 .product-card__cart {

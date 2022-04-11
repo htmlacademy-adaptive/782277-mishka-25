@@ -2,11 +2,24 @@
   font-size: 25px;
   line-height: math.div(30, 25);
   font-weight: 700;
-  text-align: center;
-  color: #000000;
+  color: $color-title;
 
   &--big {
     font-size: 27px;
     line-height: math.div(30, 27);
+  }
+}
+
+@media (min-width: $medium-width) {
+  .title {
+    font-size: 43px;
+    line-height: math.div(50, 43);
+  }
+}
+
+@media (min-width: $large-width) {
+  .title {
+    font-size: 53px;
+    line-height: math.div(57, 53);
   }
 }

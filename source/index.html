@@ -13,14 +13,18 @@
         <nav class="header__navigation navigation">
 
           <a class="navigation__logo">
-            <img class="navigation__logo-image" src="img/mobile/logo/mishka-logo-header.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+            <picture class="navigation__logo-image">
+              <source media="(min-width: 1150px)" srcset="img/desktop/logo/mishka-logo-header.svg">
+              <source media="(min-width: 768px)" srcset="img/tablet/logo/mishka-logo-header.svg">
+              <img class="navigation__logo-image" src="img/mobile/logo/mishka-logo-header.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+            </picture>
           </a>
 
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
 
-          <ul class="navigation__list site-navigation">
+          <ul class="navigation__site site-navigation">
             <li class="site-navigation__item">
               <a class="site-navigation__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -29,31 +33,31 @@
             </li>
           </ul>
 
-          <ul class="navigation__list user-navigation">
-            <li class="user-navigation__item site-search">
-              <a class="user-navigation__link site-search__link" href="#">
-                <span class="site-search__text site-search__text--hidden">Поиск по сайту</span>
+          <ul class="navigation__user user-navigation">
+            <li class="user-navigation__item search">
+              <a class="user-navigation__link search__link" href="#">
+                <span class="search__text">Поиск по сайту</span>
               </a>
             </li>
-            <li class="user-navigation__item site-cart">
-              <a class="user-navigation__link site-cart__link" href="#">
-                <span class="site-cart__text">Корзина: <span class="site-cart__counter">пока пуста</span></span>
+            <li class="user-navigation__item cart">
+              <a class="user-navigation__link cart__link" href="#">
+                <span class="cart__text">Корзина: <span class="cart__counter">пока пуста</span></span>
               </a>
             </li>
           </ul>
-        </nav>
 
-        <div class="header__submenu header-submenu">
-          <ul class="header-submenu__list">
-            <li class="header-submenu__item">
-              <a class="header-submenu__link" href="#">Новые поступления</a>
-            </li>
-            <li class="header-submenu__item">
-              <a class="header-submenu__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <p class="header-submenu__delivery">Бесплатная доставка по России</p>
-        </div>
+          <div class="navigation__submenu header-submenu">
+            <ul class="header-submenu__list">
+              <li class="header-submenu__item">
+                <a class="header-submenu__link" href="#">Новые поступления</a>
+              </li>
+              <li class="header-submenu__item">
+                <a class="header-submenu__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <p class="header-submenu__delivery">Бесплатная доставка по России</p>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -62,14 +66,14 @@
 
       <section class="intro">
         <div class="intro__wrapper">
-          <h2 class="intro__title title title--big">Милые штуки ручной работы для дома</h2>
+          <h2 class="intro__title title title--big">Милые штуки ручной<br> работы для дома</h2>
 
           <ul class="intro__category category-product">
             <li class="category-product__item category-product__item--interior">
-              <a class="category-product__link" href="#">Предметы интерьера</a>
+              <a class="category-product__link" href="#">Предметы<br> интерьера</a>
             </li>
             <li class="category-product__item category-product__item--toy">
-              <a class="category-product__link" href="#">Детские игрушки</a>
+              <a class="category-product__link" href="#">Детские<br> игрушки</a>
             </li>
           </ul>
         </div>
@@ -96,7 +100,11 @@
             </div>
           </dl>
 
-          <img class="product__image" src="img/mobile/products/knitted-basket.jpg" width="260" height="315" alt="Вязаная корзинка.">
+          <picture class="product__image">
+            <source media="(min-width: 1150px)" srcset="img/desktop/products/knitted-basket.jpg">
+            <source media="(min-width: 768px)" srcset="img/tablet/products/knitted-basket.jpg">
+            <img class="product__image" src="img/mobile/products/knitted-basket.jpg" width="260" height="315" alt="Вязаная корзинка.">
+          </picture>
 
           <p class="product__cost">Цена: 990 руб.</p>
           <a class="product__order button" href="#">Заказать</a>
@@ -108,10 +116,10 @@
           <h2 class="advantages__title title">Коротко о нас:</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
-            <li class="advantages__item advantages__item--price">Скандинавский стиль по российской цене</li>
-            <li class="advantages__item advantages__item--like">Увеличивает лайки на фотографиях</li>
             <li class="advantages__item advantages__item--knit">Связано вручную с любовью и умилением</li>
+            <li class="advantages__item advantages__item--price">Скандинавский стиль по российской цене</li>
             <li class="advantages__item advantages__item--maker">Поддержка отечественного производителя</li>
+            <li class="advantages__item advantages__item--like">Увеличивает лайки на фотографиях</li>
             <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке</li>
           </ul>
         </div>
@@ -128,14 +136,14 @@
                 <a class="reviews__author-email" href="mailto:@misssssiskras">@misssssiskras</a>
               </cite>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item visually-hidden">
               <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author">
                 <span class="reviews__author-name">Екатерина Красильникова</span>
                 <a class="reviews__author-email" href="mailto:@misssssiskras2">@misssssiskras2</a>
               </cite>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item visually-hidden">
               <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author">
                 <span class="reviews__author-name">Елена Красильникова</span>
@@ -172,7 +180,11 @@
           </address>
 
           <div class="contacts__map map">
-            <img class="map__image" src="img/mobile/map/map-image.jpg" width="320" height="454" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101.">
+            <picture class="map__image">
+              <source media="(min-width: 1150px)" srcset="img/desktop/map/map.jpg">
+              <source media="(min-width: 768px)" srcset="img/tablet/map/map.jpg">
+              <img class="map__image" src="img/mobile/map/map-image.jpg" width="320" height="454" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101.">
+            </picture>
           </div>
 
           <a class="contacts__write button" href="#">Напишите нам</a>
@@ -214,7 +226,7 @@
 
     <div class="modal modal--hidden">
       <section class="modal__content modal-content">
-        <h2 class="modal-content__title">Добавить в корзину</h2>
+        <h2 class="modal-content__title">Добавить в&nbsp;корзину</h2>
         <form class="modal-content__form cart-form" action="https://echo.htmlacademy.ru/" method="post">
 
           <fieldset class="cart-form__fieldset">

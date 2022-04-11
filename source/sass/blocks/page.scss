@@ -3,6 +3,8 @@
 }
 
 .page__body {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   margin: 0;
   font-family: $font-main;
@@ -10,6 +12,6 @@
   font-size: 15px;
   line-height: 2;
   font-weight: 400;
-  color: #444444;
-  background-color: #ffffff;
+  color: $color-main;
+  background-color: $color-background;
 }

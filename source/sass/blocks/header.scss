@@ -1,1 +1,17 @@
-// Код который будет полезен, возможно
+.header__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $medium-width) {
+  .header__wrapper {
+    width: 768px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .header__wrapper {
+    width: 1150px;
+  }
+}

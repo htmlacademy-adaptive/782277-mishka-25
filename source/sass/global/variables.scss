@@ -1,28 +1,82 @@
 // Шрифты проекта
-
 $font-main: "Open Sans", sans-serif;
 $font-button: $font-main;
 $font-input: $font-main;
 
-// Цвета проекта
+// Ширина viewport для разных устройств
+$small-width: 320px;
+$medium-width: 768px;
+$large-width: 1150px;
 
-$white: #ffffff;
-$gray-light: #f1f1f1;
-$gray: #ececec;
-$black-light: #444444;
-$black: #000000;
+// Цвета проекта - оттенки серого
+$transparent: rgba(0, 0, 0, 0);
+$color-inverse: #ffffff;
+$color-inverse-75: rgba(255, 255, 255, 0.75);
 
-$bright: #63d1bb;
-$bright-light: #62d1ba;
-$light: #59d5bc;
-$darck-light: #56c3b2;
-$dark: #46c1ae;
+$gray-lightest: #f9f9f9;
+$gray-lighten: #f1f1f1;
+$gray-light: #ececec;
+$gray: #c6c6c6;
+$gray-dark: #444444;
+$gray-darken: #000000;
 
-$color-main: $black-light;
-$color-background: $white;
-$color-background-gray: $gray-light;
-$color-title: $black;
-$color-link: $black;
-$color-button-text: $black-light;
-$color-button-background: $white;
-$color-button-border: $black-light;
+// Цвета проекта - основной цвет
+$color-lighten: #63d1bb;
+$color-light: #62d1ba;
+$color-base: #59d5bc;
+$color-dark: #56c3b2;
+$color-darken: #46c1ae;
+
+// Общие цвета
+$color-main: $gray-dark;
+$color-background: $color-inverse;
+
+// Цвет title
+$color-title: $gray-darken;
+
+// Цвет link
+$color-link: $gray-darken;
+
+// Цвет button
+$color-button-text: $gray-dark;
+$color-button-background: $color-inverse;
+$color-button-border: $gray-dark;
+
+// Цвет header
+$color-nav-shadow: $gray-light;
+
+// Цвет footer
+$color-footer-background: $gray-lighten;
+
+// Цвет modal
+$color-modal-veil: rgba($color-inverse, 0.9);
+$color-modal-background: $color-inverse;
+$color-modal-border: $gray;
+$color-modal-shadow: rgba(0, 1, 1, 0.25);
+$color-modal-item-border: $gray-dark;
+$color-modal-button-text: $color-inverse;
+$color-modal-button-background: $color-lighten;
+
+// Цвет index-intro
+$color-intro-background: $gray-lightest;
+
+// Цвет index-category
+$color-category-title: $color-inverse;
+$color-category-link: $color-inverse;
+$color-category-background-light: $color-lighten;
+$color-category-background-dark: $color-dark;
+
+// Цвет index-product
+$color-product-label: $color-lighten;
+
+// Цвет index-slider
+$color-slider-button-background: $color-inverse;
+$color-slider-button-border: $gray-light;
+
+// Цвет catalog-video
+$color-video-button-background: $color-inverse;
+
+// Цвет form-order
+$color-form-fieldset: $color-lighten;
+$color-form-label: $gray-darken;
+$color-form-input: $gray-darken;
