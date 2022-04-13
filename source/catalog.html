@@ -13,47 +13,53 @@
         <nav class="header__navigation navigation">
 
           <a class="navigation__logo" href="index.html">
-            <img class="navigation__logo-image" src="img/mobile/logo/mishka-logo-header.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+            <picture class="navigation__logo-image">
+              <source media="(min-width: 1150px)" srcset="img/desktop/logo/mishka-logo-header.svg">
+              <source media="(min-width: 768px)" srcset="img/tablet/logo/mishka-logo-header.svg">
+              <img class="navigation__logo-image" src="img/mobile/logo/mishka-logo-header.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+            </picture>
           </a>
 
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
 
-          <ul class="navigation__list site-navigation">
-            <li class="site-navigation__item">
-              <a class="site-navigation__link">Каталог товаров</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
+          <div class="navigation__wrapper">
+            <ul class="navigation__site site-navigation">
+              <li class="site-navigation__item">
+                <a class="site-navigation__link">Каталог товаров</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
 
-          <ul class="navigation__list user-navigation">
-            <li class="user-navigation__item site-search">
-              <a class="user-navigation__link site-search__link" href="#">
-                <span class="site-search__text site-search__text--hidden">Поиск по сайту</span>
-              </a>
-            </li>
-            <li class="user-navigation__item site-cart">
-              <a class="user-navigation__link site-cart__link" href="#">
-                <span class="site-cart__text">Корзина: <span class="site-cart__counter">пока пуста</span></span>
-              </a>
-            </li>
-          </ul>
+            <ul class="navigation__user user-navigation">
+              <li class="user-navigation__item search">
+                <a class="user-navigation__link search__link" href="#">
+                  <span class="search__text">Поиск по сайту</span>
+                </a>
+              </li>
+              <li class="user-navigation__item cart">
+                <a class="user-navigation__link cart__link" href="#">
+                  <span class="cart__text">Корзина: <span class="cart__counter">пока пуста</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navigation__submenu header-submenu">
+            <ul class="header-submenu__list">
+              <li class="header-submenu__item">
+                <a class="header-submenu__link" href="#">Новые поступления</a>
+              </li>
+              <li class="header-submenu__item">
+                <a class="header-submenu__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <p class="header-submenu__delivery">Бесплатная доставка по России</p>
+          </div>
         </nav>
-
-        <div class="header__submenu header-submenu">
-          <ul class="header-submenu__list">
-            <li class="header-submenu__item">
-              <a class="header-submenu__link" href="#">Новые поступления</a>
-            </li>
-            <li class="header-submenu__item">
-              <a class="header-submenu__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <p class="header-submenu__delivery">Бесплатная доставка по России</p>
-        </div>
       </div>
     </header>
 
@@ -69,7 +75,11 @@
 
           <ul class="catalog__list">
             <li class="catalog__item product-card">
-              <img class="product-card__image" src="img/mobile/products/photo-1.jpg" width="260" height="195" alt="Зайчик-попрыгайчик.">
+              <picture class="product-card__image">
+                <source media="(min-width: 1150px)" srcset="img/desktop/products/photo-1.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/products/photo-1.jpg">
+                <img class="product-card__image" src="img/mobile/products/photo-1.jpg" width="260" height="195" alt="Зайчик-попрыгайчик.">
+              </picture>
               <h3 class="product-card__title">
                 <a class="product-card__link" href="#">Зайчик-попрыгайчик</a>
               </h3>
@@ -80,7 +90,11 @@
               </a>
             </li>
             <li class="catalog__item product-card">
-              <img class="product-card__image" src="img/mobile/products/photo-2.jpg" width="260" height="195" alt="Корзинка для белья.">
+              <picture class="product-card__image">
+                <source media="(min-width: 1150px)" srcset="img/desktop/products/photo-2.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/products/photo-2.jpg">
+                <img class="product-card__image" src="img/mobile/products/photo-2.jpg" width="260" height="195" alt="Корзинка для белья.">
+              </picture>
               <h3 class="product-card__title">
                 <a class="product-card__link" href="#">Корзинка для белья</a>
               </h3>
@@ -91,7 +105,11 @@
               </a>
             </li>
             <li class="catalog__item product-card">
-              <img class="product-card__image" src="img/mobile/products/photo-3.jpg" width="260" height="195" alt="Большая корзинка для игрушек.">
+              <picture class="product-card__image">
+                <source media="(min-width: 1150px)" srcset="img/desktop/products/photo-3.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/products/photo-3.jpg">
+                <img class="product-card__image" src="img/mobile/products/photo-3.jpg" width="260" height="195" alt="Большая корзинка для игрушек.">
+              </picture>
               <h3 class="product-card__title">
                 <a class="product-card__link" href="#">Большая корзинка для игрушек</a>
               </h3>
@@ -156,7 +174,7 @@
 
     <div class="modal modal--hidden">
       <section class="modal__content modal-content">
-        <h2 class="modal-content__title">Добавить в корзину</h2>
+        <h2 class="modal-content__title">Добавить в&nbsp;корзину</h2>
         <form class="modal-content__form cart-form" action="https://echo.htmlacademy.ru/" method="post">
 
           <fieldset class="cart-form__fieldset">

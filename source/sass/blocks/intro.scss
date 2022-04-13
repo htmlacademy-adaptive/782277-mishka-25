@@ -1,5 +1,10 @@
 .intro {
   background-color: $color-intro-background;
+
+  &--inner {
+    min-height: 176px;
+    padding: 72px 14px;
+  }
 }
 
 .intro__wrapper {
@@ -24,6 +29,10 @@
 }
 
 @media (min-width: $medium-width) {
+  .intro--inner {
+    min-height: 200px;
+  }
+
   .intro__wrapper {
     width: 768px;
     min-height: 744px;
