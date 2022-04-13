@@ -23,18 +23,15 @@
   border: 0;
 }
 
-.order-form__legend {
+.order-form__title {
   grid-area: form-title;
+  margin: 0;
   padding: 0;
   font-size: 17px;
   line-height: math.div(16, 17);
   font-weight: 700;
   text-transform: uppercase;
   color: $color-form-fieldset;
-
-  &--label {
-    margin-bottom: 10px;
-  }
 }
 
 .order-form__list {
