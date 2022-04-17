@@ -3,7 +3,6 @@
 @use "sass:math";
 
 // Общие блоки проекта
-
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/global.scss";
@@ -15,7 +14,6 @@
 @import "blocks/button.scss";
 
 // Основной header проекта
-
 @import "blocks/header.scss";
 @import "blocks/navigation.scss";
 @import "blocks/site-navigation.scss";
@@ -25,19 +23,16 @@
 @import "blocks/header-submenu.scss";
 
 // Основной footer проекта
-
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 
 // Основное модальное окно проекта
-
 @import "blocks/modal.scss";
 @import "blocks/modal-content.scss";
 @import "blocks/cart-form.scss";
 
 // Главная страница проекта
-
 @import "blocks/intro.scss";
 @import "blocks/category-product.scss";
 @import "blocks/product.scss";
@@ -48,14 +43,12 @@
 @import "blocks/map.scss";
 
 // Страница каталога
-
 @import "blocks/catalog.scss";
 @import "blocks/product-card.scss";
 @import "blocks/production.scss";
 @import "blocks/video-player.scss";
 
 // Страница с формой заказа
-
 @import "blocks/form.scss";
 @import "blocks/order-form.scss";
 

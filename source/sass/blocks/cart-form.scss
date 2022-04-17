@@ -17,24 +17,25 @@
   flex-wrap: wrap;
 }
 
-.cart-form__item {
-  display: flex;
-  width: 82px;
-  min-height: 52px;
-  border: 2px solid $color-modal-item-border;
-}
-
 .cart-form__item:not(:last-child) {
   margin-right: 6px;
 }
 
 .cart-form__label {
-  margin: auto;
+  display: block;
+  width: 82px;
+  min-height: 52px;
+  padding: 16px;
   font-size: 17px;
   line-height: math.div(16, 17);
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  border: 2px solid $color-modal-item-border;
+}
+
+.cart-form__input:checked ~ .cart-form__label {
+  border-color: $color-modal-item-cheked-border;
 }
 
 .cart-form__input {
@@ -60,11 +61,12 @@
 
 @media (min-width: $medium-width) {
   .cart-form__legend {
+    margin-bottom: 20px;
     font-size: 17px;
     line-height: math.div(30, 17);
   }
 
-  .cart-form__item {
+  .cart-form__label {
     width: 112px;
   }
 

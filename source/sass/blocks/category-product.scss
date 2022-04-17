@@ -6,25 +6,33 @@
 }
 
 .category-product__item {
-  width: 320px;
+  position: relative;
   color: $color-category-title;
-
-  &--interior {
-    background-color: $color-category-background-light;
-  }
-
-  &--toy {
-    background-color: $color-category-background-dark;
-  }
 }
 
 .category-product__link {
   @include link-style;
-  padding: 24px 30px;
+  padding: 24px 100px 31px 30px;
   font-size: 19px;
   line-height: math.div(24, 19);
   font-weight: 700;
-  color: $color-category-link;
+  color: $color-category-title;
+
+  &--interior {
+    background-color: $color-category-background-light;
+    background-image: url("../img/decor/category-interior.svg");
+    background-repeat: no-repeat;
+    background-position: center right 36px;
+    background-size: 40px 62px;
+  }
+
+  &--toy {
+    background-color: $color-category-background-dark;
+    background-image: url("../img/decor/category-toy.svg");
+    background-repeat: no-repeat;
+    background-position: center right 27px;
+    background-size: 60px 60px;
+  }
 }
 
 
@@ -38,9 +46,13 @@
   }
 
   .category-product__link {
-    padding: 25px 36px;
+    padding: 25px 100px 34px 36px;
     font-size: 20px;
     line-height: math.div(30, 20);
+
+    &--toy {
+      background-position: center right 32px;
+    }
   }
 }
 

@@ -1,3 +1,20 @@
+.reviews {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 6px;
+    background-image: url("../img/decor/wrapper-zigzag-mobile.svg");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
 .reviews__wrapper {
   display: grid;
   grid-template-areas:
@@ -8,7 +25,9 @@
   grid-template-columns: 1fr;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 30px;
   padding: 30px;
+  padding-bottom: 50px;
 }
 
 .reviews__title {
@@ -28,18 +47,18 @@
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .reviews__author {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   font-style: normal;
-  font-size: 17px;
 }
 
 .reviews__author-name {
   display: block;
+  font-size: 17px;
   line-height: math.div(24, 17);
   font-weight: 700;
   color: $color-title;
@@ -47,6 +66,7 @@
 
 .reviews__author-email {
   @include link-style;
+  font-size: 17px;
   line-height: math.div(30, 17);
   color: $color-main;
 }
@@ -66,10 +86,14 @@
   .reviews {
     margin: 0 auto;
     background-color: $color-background;
-    background-image: url("../img/tablet/decor/review-background.jpg");
+    background-image: url("../img/decor/review-background-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: left;
-    background-size: auto;
+    background-position: top left;
+    background-size: 350px 457px;
+
+    &::after {
+      height: 17px;
+    }
   }
 
   .reviews__wrapper {
@@ -77,31 +101,27 @@
       "review-title .           review-button "
       "review-list  review-list .             "
       "review-list  review-list review-toggles";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 300px 1fr 176px;
     width: 768px;
-    padding: 50px;
+    padding: 84px 50px 100px;
+  }
+
+  .reviews__title {
+    margin-bottom: 38px;
   }
 
   .reviews__list {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
   }
 
   .reviews__text {
+    margin-bottom: 62px;
     font-size: 17px;
     line-height: math.div(30, 17);
   }
 
-  .reviews__author {
-    font-size: 18px;
-    line-height: math.div(24, 18);
-  }
-
   .reviews__author-name {
-    font-size: 18px;
-    line-height: math.div(24, 18);
-  }
-
-  .reviews__author-email {
+    margin-bottom: 2px;
     font-size: 18px;
     line-height: math.div(24, 18);
   }
@@ -111,6 +131,8 @@
   }
 
   .reviews__write {
+    width: 175px;
+    margin-top: -4px;
     font-size: 17px;
     line-height: math.div(20, 17);
   }
@@ -118,17 +140,28 @@
 
 @media (min-width: $large-width) {
   .reviews {
-    max-width: 1150px;
-    background-image: url("../img/tablet/decor/review-background.jpg");
+    width: 1150px;
+    background-image: url("../img/decor/review-background-desktop.jpg");
+    background-position: top left 50px;
+
+    &::after {
+      width: 1050px;
+      height: 23px;
+      margin: 0 auto;
+    }
   }
 
   .reviews__wrapper {
     width: 1150px;
+    padding: 80px 50px 154px 224px;
   }
 
-  .reviews__author {
-    font-size: 17px;
-    line-height: math.div(24, 17);
+  .reviews__title {
+    margin-bottom: 34px;
+  }
+
+  .reviews__text {
+    margin-bottom: 45px;
   }
 
   .reviews__author-name {
@@ -136,8 +169,7 @@
     line-height: math.div(24, 17);
   }
 
-  .reviews__author-email {
-    font-size: 17px;
-    line-height: math.div(24, 17);
+  .reviews__write {
+    margin: 0;
   }
 }

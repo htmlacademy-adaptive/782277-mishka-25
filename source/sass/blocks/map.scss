@@ -1,12 +1,21 @@
 .map {
-  display: flex;
+  display: grid;
+  grid-template-areas: "map";
 }
 
 .map__image {
   @include image-normalize;
+  grid-area: map;
   width: 320px;
   height: 454px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.map__image-interactive {
+  @include image-normalize;
+  grid-area: map;
+  width: 100%;
+  border: 0;
 }
 
 @media (min-width: $medium-width) {

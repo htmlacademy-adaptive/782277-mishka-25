@@ -14,13 +14,22 @@
 }
 
 .header-submenu__delivery {
+  width: 260px;
   margin: 0;
+  padding: 10px;
   font-weight: 400;
   text-align: right;
   color: $color-main;
 }
 
 @media (min-width: $medium-width) {
+  .header-submenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $color-intro-background;
+  }
+
   .header-submenu__list {
     display: none;
   }
@@ -28,21 +37,20 @@
 
 @media (min-width: $large-width) {
   .header-submenu {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 1050px;
   }
 
   .header-submenu__list {
     display: flex;
+    flex-wrap: wrap;
+    width: 430px;
   }
 
   .header-submenu__item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 42px;
   }
 
   .header-submenu__link {
-    padding: 20px 0;
+    padding: 20px 10px;
   }
 }
