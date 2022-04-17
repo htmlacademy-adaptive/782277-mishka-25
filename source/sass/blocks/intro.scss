@@ -12,46 +12,78 @@
   flex-direction: column;
   justify-content: space-between;
   width: 320px;
-  min-height: 488px;
+  min-height: 489px;
   margin: 0 auto;
-  padding-top: 72px;
+  margin-bottom: 32px;
   background-color: $color-intro-background;
-  background-image: url("../img/mobile/decor/mishka-background.jpg");
+  background-image: url("../img/decor/mishka-background-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center -18px;
+  background-size: contain;
 }
 
 .intro__title {
   width: 260px;
   margin: 0 auto;
+  margin-top: 74px;
   text-align: center;
 }
 
 @media (min-width: $medium-width) {
-  .intro--inner {
-    min-height: 200px;
+  .intro {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -12px;
+      left: 2px;
+      content: "";
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/decor/category-mask-zigzag-tablet.svg");
+      background-repeat: repeat-x;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &--inner {
+      min-height: 200px;
+    }
   }
 
   .intro__wrapper {
     width: 768px;
-    min-height: 744px;
-    padding-top: 72px;
-    background-image: url("../img/tablet/decor/mishka-background.jpg");
+    min-height: 680px;
+    background-image: url("../img/decor/mishka-background-tablet.jpg");
+    background-position: center -66px;
+    background-size: cover;
   }
 
   .intro__title {
     width: 668px;
+    margin-top: 90px;
   }
 }
 
 @media (min-width: $large-width) {
+  .intro {
+    &::after {
+      bottom: -18px;
+      left: 0;
+      height: 34px;
+      background-image: url("../img/decor/category-mask-zigzag-desktop.svg");
+    }
+  }
+
   .intro__wrapper {
     width: 1150px;
-    background-image: url("../img/desktop/decor/mishka-background.jpg");
+    min-height: 680px;
+    background-image: url("../img/decor/mishka-background-desktop.jpg");
+    background-position: center -65px;
   }
 
   .intro__title {
     width: 700px;
+    margin-top: 94px;
   }
 }

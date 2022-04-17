@@ -1,1 +1,22 @@
-// Код который будет полезен, возможно
+.cart {
+  position: relative;
+}
+
+.cart__icon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+@media (min-width: $medium-width) {
+  .cart__link {
+    padding-left: 82px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .cart__link {
+    padding-left: 84px;
+  }
+}

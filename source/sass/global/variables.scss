@@ -5,20 +5,21 @@ $font-input: $font-main;
 
 // Ширина viewport для разных устройств
 $small-width: 320px;
+$small-width-only: 767px;
 $medium-width: 768px;
 $large-width: 1150px;
 
 // Цвета проекта - оттенки серого
 $transparent: rgba(0, 0, 0, 0);
 $color-inverse: #ffffff;
-$color-inverse-75: rgba(255, 255, 255, 0.75);
 
 $gray-lightest: #f9f9f9;
 $gray-lighten: #f1f1f1;
 $gray-light: #ececec;
-$gray: #c6c6c6;
-$gray-dark: #444444;
-$gray-darken: #000000;
+$gray: #e5e5e5;
+$gray-dark: #c6c6c6;
+$gray-darken: #444444;
+$gray-darkest: #000000;
 
 // Цвета проекта - основной цвет
 $color-lighten: #63d1bb;
@@ -28,32 +29,34 @@ $color-dark: #56c3b2;
 $color-darken: #46c1ae;
 
 // Общие цвета
-$color-main: $gray-dark;
+$color-main: $gray-darken;
 $color-background: $color-inverse;
-
-// Цвет title
-$color-title: $gray-darken;
-
-// Цвет link
-$color-link: $gray-darken;
+$color-title: $gray-darkest;
+$color-link: $gray-darkest;
+$color-shadow-line: $gray-light;
+$color-transparent: $transparent;
 
 // Цвет button
-$color-button-text: $gray-dark;
+$color-button-text: $gray-darken;
 $color-button-background: $color-inverse;
-$color-button-border: $gray-dark;
+$color-button-border: $gray-darken;
 
 // Цвет header
-$color-nav-shadow: $gray-light;
+$color-nav-button-icon: $gray-darkest;
+$color-nav-button-background: $transparent;
+$color-search-button-background: $transparent;
 
 // Цвет footer
 $color-footer-background: $gray-lighten;
+$color-footer-shadow-line: $gray;
 
 // Цвет modal
 $color-modal-veil: rgba($color-inverse, 0.9);
 $color-modal-background: $color-inverse;
-$color-modal-border: $gray;
+$color-modal-border: $gray-dark;
 $color-modal-shadow: rgba(0, 1, 1, 0.25);
-$color-modal-item-border: $gray-dark;
+$color-modal-item-border: $gray-darken;
+$color-modal-item-cheked-border: $color-lighten;
 $color-modal-button-text: $color-inverse;
 $color-modal-button-background: $color-lighten;
 
@@ -62,7 +65,6 @@ $color-intro-background: $gray-lightest;
 
 // Цвет index-category
 $color-category-title: $color-inverse;
-$color-category-link: $color-inverse;
 $color-category-background-light: $color-lighten;
 $color-category-background-dark: $color-dark;
 
@@ -73,11 +75,14 @@ $color-product-label: $color-lighten;
 $color-slider-button-background: $color-inverse;
 $color-slider-button-border: $gray-light;
 
+// Цвет index-contact
+$color-contact-underline: $color-light;
+
 // Цвет catalog-video
 $color-video-button-background: $color-inverse;
 
 // Цвет form-order
-$color-form-fieldset: $color-lighten;
+$color-form-fieldset-title: $color-lighten;
 $color-form-fieldset-background: $gray-lighten;
-$color-form-label: $gray-darken;
-$color-form-input: $gray-darken;
+$color-form-label: $gray-darkest;
+$color-form-input: $gray-darkest;

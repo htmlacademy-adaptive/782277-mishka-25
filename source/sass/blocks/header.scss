@@ -1,12 +1,46 @@
+.header {
+  &::before {
+    z-index: 1;
+    position: absolute;
+    top: 79px;
+    right: 0;
+    left: 0;
+    content: "";
+    height: 1px;
+    background-color: $color-shadow-line;
+  }
+}
+
 .header__wrapper {
   width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: $medium-width) {
+  .header {
+    &::before {
+      top: 89px;
+    }
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      top: 89px;
+      right: 0;
+      left: 0;
+      content: "";
+      height: 100%;
+      background-color: $color-intro-background;
+    }
+  }
+
   .header__wrapper {
     width: 768px;
     padding: 0 50px;
+  }
+
+  .header__navigation {
+    margin: 0 -10px;
   }
 }
 

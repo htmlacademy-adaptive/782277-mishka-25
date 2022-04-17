@@ -1,9 +1,24 @@
+.search {
+  position: relative;
+}
+
+.search__icon {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform: translateY(-50%);
+}
+
 @media (min-width: $medium-width) {
+  .search__icon {
+    left: 36px;
+  }
+
   .search__link {
-    width: 83px;
-    height: 88px;
-    padding: 32px;
-    background-color: #000000;
+    width: 84px;
+    height: 89px;
+    padding: 26px 24px;
+    background-color: $color-search-button-background;
   }
 
   .search__text {

@@ -1,4 +1,9 @@
+.slider__item--hidden {
+  display: none;
+}
+
 .slider__toggles {
+  z-index: 1;
   display: flex;
 }
 
@@ -7,7 +12,26 @@
   width: 130px;
   height: 52px;
   padding: 0;
-  background-color: #000000;
+  background-color: $color-slider-button-background;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px 26px;
   border: 1px solid $color-slider-button-border;
   cursor: pointer;
+
+  &--previous {
+    background-image: url("../img/decor/button-arrow-left.svg");
+  }
+
+  &--forward {
+    background-image: url("../img/decor/button-arrow-right.svg");
+  }
+}
+
+@media (min-width: $medium-width) {
+  .slider__toggle {
+    width: 88px;
+    height: 44px;
+    border: 0;
+  }
 }
