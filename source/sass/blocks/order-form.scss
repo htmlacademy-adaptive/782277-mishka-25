@@ -196,7 +196,7 @@
 }
 
 .order-form__input:checked + .order-form__label--radio::before {
-  background-image: url("../../img/decor/form-radio.svg");
+  background-image: url("../img/decor/form-radio.svg");
 }
 
 .order-form__label--checkbox {
@@ -220,7 +220,7 @@
 }
 
 .order-form__input:checked + .order-form__label--checkbox::before {
-  background-image: url("../../img/decor/form-checkbox.svg");
+  background-image: url("../img/decor/form-checkbox.svg");
 }
 
 .order-form__input,
