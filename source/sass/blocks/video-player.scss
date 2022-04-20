@@ -1,6 +1,22 @@
+.video-player {
+  position: relative;
+}
+
 .video-player__play {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: block;
+  width: 100px;
+  height: 78px;
+  margin: auto;
   background-color: $color-video-button-background;
+  background-image: url("../img/video/video-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   border: 0;
   cursor: pointer;
 }

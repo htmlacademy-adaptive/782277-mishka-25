@@ -7,11 +7,15 @@
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
+
+  &--header {
+    margin-bottom: 12px;
+    padding: 18px 30px;
+  }
 }
 
 .order-form__intro {
   margin: 0;
-  margin-bottom: 30px;
   font-size: 13px;
   line-height: math.div(24, 13);
 }
@@ -19,19 +23,128 @@
 .order-form__fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 10px;
   border: 0;
 }
 
+.order-form__fieldset--type {
+  margin-bottom: 10px;
+}
+
+.order-form__fieldset--type .order-form__list {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.order-form__fieldset--type .order-form__item {
+  min-height: 42px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.order-form__fieldset--color {
+  margin-bottom: 10px;
+}
+
+.order-form__fieldset--color .order-form__list {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.order-form__fieldset--color .order-form__item {
+  min-height: 38px;
+
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+
+.order-form__fieldset--user {
+  margin-bottom: 10px;
+}
+
+.order-form__fieldset--user .order-form__list {
+  padding-top: 28px;
+  padding-bottom: 24px;
+}
+
+.order-form__fieldset--user .order-form__item {
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+
+.order-form__fieldset--user .order-form__input {
+  width: 100%;
+  min-height: 52px;
+  padding: 10px;
+  padding-left: 0;
+  border: 0;
+  border-bottom: 2px solid $color-form-input-border;
+}
+
+.order-form__fieldset--phone {
+  margin-bottom: 35px;
+}
+
+.order-form__fieldset--phone .order-form__input {
+  width: 100%;
+  min-height: 56px;
+  padding: 10px 40px;
+  padding-left: 0;
+  background-image: url("../img/decor/form-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center right 6px;
+  background-size: 25px 24px;
+  border: 0;
+  border-bottom: 2px solid $color-form-input-border;
+}
+
+.order-form__fieldset--mail {
+  margin-bottom: 35px;
+}
+
+.order-form__fieldset--mail .order-form__input {
+  width: 100%;
+  min-height: 56px;
+  padding: 10px 40px;
+  padding-left: 0;
+  background-image: url("../img/decor/form-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center right 3px;
+  background-size: 32px 21px;
+  border: 0;
+  border-bottom: 2px solid $color-form-input-border;
+}
+
+.order-form__fieldset--wish {
+  margin-bottom: 16px;
+}
+
+.order-form__fieldset--wish .order-form__title {
+  margin-bottom: 22px;
+}
+
 .order-form__title {
+  position: relative;
   grid-area: form-title;
   margin: 0;
-  padding: 0;
   font-size: 17px;
   line-height: math.div(16, 17);
   font-weight: 700;
   text-transform: uppercase;
   color: $color-form-fieldset-title;
+
+  // &::after {
+  //   position: absolute;
+  //   top: 50%;
+  //   right: 0;
+  //   left: 0;
+  //   content: "";
+  //   height: 1px;
+  //   background-color: $color-form-label-line;
+  // }
 }
 
 .order-form__list {
@@ -40,26 +153,74 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 30px 0;
 }
 
 .order-form__item {
   display: flex;
-
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
+  align-items: center;
 
   &--direction {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
 .order-form__label {
+  position: relative;
   font-size: 17px;
   line-height: math.div(18, 17);
   font-weight: 700;
   color: $color-form-label;
+  cursor: pointer;
+}
+
+.order-form__label--radio {
+  padding: 4px;
+  padding-left: 60px;
+}
+
+.order-form__label--radio::before {
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  content: "";
+  width: 42px;
+  height: 42px;
+  background-color: $color-form-control-background;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+  border: 2px solid $color-form-control-border;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.order-form__input:checked + .order-form__label--radio::before {
+  background-image: url("../../img/decor/form-radio.svg");
+}
+
+.order-form__label--checkbox {
+  padding: 10px;
+  padding-left: 60px;
+}
+
+.order-form__label--checkbox::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 38px;
+  height: 38px;
+  background-color: $color-form-control-background;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 23px 16px;
+  border: 2px solid $color-form-control-border;
+  transform: translateY(-50%);
+}
+
+.order-form__input:checked + .order-form__label--checkbox::before {
+  background-image: url("../../img/decor/form-checkbox.svg");
 }
 
 .order-form__input,
@@ -79,6 +240,8 @@
 .order-form__textarea {
   width: 100%;
   min-height: 142px;
+  padding: 17px;
+  border-color: $color-form-control-border;
 }
 
 .order-form__info {
@@ -90,8 +253,7 @@
 
 .order-form__send {
   width: 260px;
-  margin-bottom: 30px;
-  padding: 18px;
+  padding: 16px;
   font-size: 17px;
   line-height: math.div(16, 17);
 }
@@ -100,12 +262,14 @@
   .order-form__wrapper {
     grid-template-areas: "form-title form-field";
     grid-template-columns: 168px 500px;
+    align-items: start;
     width: 768px;
     padding: 0 50px;
 
     &--header {
       grid-template-areas: "form-intro";
       grid-template-columns: 668px;
+      padding: 18px 50px;
     }
 
     &--footer {
@@ -122,32 +286,189 @@
   }
 
   .order-form__fieldset {
-    margin-bottom: 30px;
-
     &--even {
       background-color: $color-form-fieldset-background;
     }
   }
 
-  .order-form__list {
-    padding: 0;
+  .order-form__fieldset--type {
+    margin-bottom: 15px;
+  }
 
+  .order-form__fieldset--type .order-form__wrapper {
+    padding: 34px 50px;
+  }
+
+  .order-form__fieldset--type .order-form__title {
+    margin-top: 18px;
+  }
+
+  .order-form__fieldset--type .order-form__list {
+    padding: 0;
+  }
+
+  .order-form__fieldset--type .order-form__item {
+    min-height: 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .order-form__fieldset--colore {
+    margin-bottom: 0;
+  }
+
+  .order-form__fieldset--color .order-form__wrapper {
+    padding: 50px;
+    padding-bottom: 26px;
+  }
+
+  .order-form__fieldset--color .order-form__title {
+    margin-top: 18px;
+  }
+
+  .order-form__fieldset--color .order-form__list {
+    padding: 0;
+  }
+
+  .order-form__fieldset--color .order-form__item {
+    align-items: flex-start;
+    width: 240px;
+    min-height: 52px;
+
+    &:not(:nth-child(even)) {
+      margin-right: 20px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .order-form__fieldset--user .order-form__wrapper {
+    padding: 40px 50px;
+  }
+
+  .order-form__fieldset--user .order-form__title {
+    margin-top: 18px;
+  }
+
+  .order-form__fieldset--user .order-form__list {
+    padding: 0;
+  }
+
+  .order-form__fieldset--user .order-form__item {
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .order-form__fieldset--user .order-form__label {
+    margin-right: 24px;
+  }
+
+  .order-form__fieldset--user .order-form__input {
+    padding: 10px 18px;
+  }
+
+  .order-form__fieldset--phone {
+    margin-bottom: 0;
+  }
+
+  .order-form__fieldset--phone .order-form__wrapper {
+    padding: 46px 50px 10px;
+  }
+
+  .order-form__fieldset--phone .order-form__title {
+    margin-top: 20px;
+  }
+
+  .order-form__fieldset--phone .order-form__input {
+    grid-area: form-field;
+    padding: 10px 18px;
+    padding-right: 64px;
+    background-color: $color-form-fieldset-background;
+    background-position: center right 26px;
+  }
+
+  .order-form__fieldset--mail {
+    margin-bottom: 0;
+  }
+
+  .order-form__fieldset--mail .order-form__wrapper {
+    padding: 50px;
+    padding-top: 10px;
+  }
+
+  .order-form__fieldset--mail .order-form__title {
+    margin-top: 20px;
+  }
+
+  .order-form__fieldset--mail .order-form__input {
+    grid-area: form-field;
+    padding: 10px 18px;
+    padding-right: 64px;
+    background-color: $color-form-fieldset-background;
+    background-position: center right 22px;
+  }
+
+  .order-form__fieldset--wish {
+    margin-bottom: 2px;
+  }
+
+  .order-form__fieldset--wish .order-form__wrapper {
+    padding: 50px;
+  }
+
+  .order-form__fieldset--wish .order-form__title {
+    margin-top: 20px;
+  }
+
+  .order-form__fieldset--wish .order-form__textarea {
+    grid-area: form-field;
+  }
+
+  .order-form__list {
     &--direction {
       flex-direction: row;
     }
   }
 
-  .order-form__list--direction .order-form__item {
-    width: 225px;
-  }
-
-  .order-form__item--direction {
-    flex-direction: row;
+  .order-form__item {
+    &--direction {
+      flex-direction: row;
+    }
   }
 
   .order-form__label {
     font-size: 19px;
     line-height: math.div(18, 19);
+  }
+
+  .order-form__label--radio {
+    padding: 16px;
+    padding-left: 78px;
+  }
+
+  .order-form__label--radio::before {
+    left: 1px;
+    width: 52px;
+    height: 52px;
+    background-size: 23px 23px;
+  }
+
+  .order-form__label--checkbox {
+    padding: 16px;
+    padding-left: 80px;
+  }
+
+  .order-form__label--checkbox::before {
+    width: 52px;
+    height: 52px;
+    background-size: 32px 22px;
   }
 
   .order-form__input,
@@ -173,17 +494,42 @@
 
 @media (min-width: $large-width) {
   .order-form__wrapper {
-    grid-template-columns: 205px 1fr;
+    grid-template-columns: 175px 702px;
     width: 1150px;
 
     &--header {
       grid-template-areas: ". form-intro";
-      grid-template-columns: 205px 1fr;
+      grid-template-columns: 175px 702px;
+      padding: 38px 50px 28px;
+      margin-bottom: 0;
     }
 
     &--footer {
       grid-template-areas: ". form-button form-info";
-      grid-template-columns: 205px 230px 1fr;
+      grid-template-columns: 175px 230px 472px;
     }
+  }
+
+  .order-form__title {
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+
+  .order-form__fieldset--color .order-form__wrapper {
+    grid-template-columns: 175px 1fr;
+  }
+
+  .order-form__fieldset--color .order-form__item {
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+
+  .order-form__fieldset--phone .order-form__input {
+    background-position: center right 10px;
+  }
+
+  .order-form__fieldset--mail .order-form__input {
+    background-position: center right 6px;
   }
 }

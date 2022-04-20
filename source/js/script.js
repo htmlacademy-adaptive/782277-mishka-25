@@ -16,15 +16,23 @@ navigationToggle.addEventListener('click', function () {
 
 // Оживление модального окна
 let modal = document.querySelector('.modal');
-let orderButton = document.querySelector('.js-order');
+let orderButtons = document.querySelectorAll('.js-order');
 
-orderButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modal.classList.remove('modal--hidden');
+for (let i = 0; i < orderButtons.length; i++) {
+  orderButtons[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal.classList.remove('modal--hidden');
+  });
+}
+
+modal.addEventListener('click', function (evt) {
+  if (evt.target === modal) {
+    modal.classList.add('modal--hidden');
+  }
 });
 
 document.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
+  if (evt.key === 'Escape') {
     modal.classList.add('modal--hidden');
   }
 });
