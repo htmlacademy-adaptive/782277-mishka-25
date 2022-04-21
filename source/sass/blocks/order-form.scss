@@ -127,24 +127,24 @@
 }
 
 .order-form__title {
-  position: relative;
+  display: flex;
+  align-items: center;
   grid-area: form-title;
   margin: 0;
   font-size: 17px;
   line-height: math.div(16, 17);
   font-weight: 700;
+  white-space: nowrap;
   text-transform: uppercase;
   color: $color-form-fieldset-title;
 
-  // &::after {
-  //   position: absolute;
-  //   top: 50%;
-  //   right: 0;
-  //   left: 0;
-  //   content: "";
-  //   height: 1px;
-  //   background-color: $color-form-label-line;
-  // }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    margin-left: 22px;
+    background-color: $color-form-label-line;
+  }
 }
 
 .order-form__list {
@@ -187,16 +187,13 @@
   width: 42px;
   height: 42px;
   background-color: $color-form-control-background;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 18px 18px;
   border: 2px solid $color-form-control-border;
   border-radius: 50%;
   transform: translateY(-50%);
 }
 
 .order-form__input:checked + .order-form__label--radio::before {
-  background-image: url("../img/decor/form-radio.svg");
+  background-image: radial-gradient(circle closest-side at center, $color-form-control-radio 40%, $color-form-control-background 41%);
 }
 
 .order-form__label--checkbox {
@@ -212,15 +209,15 @@
   width: 38px;
   height: 38px;
   background-color: $color-form-control-background;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 23px 16px;
   border: 2px solid $color-form-control-border;
   transform: translateY(-50%);
 }
 
 .order-form__input:checked + .order-form__label--checkbox::before {
   background-image: url("../img/decor/form-checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 23px 16px;
 }
 
 .order-form__input,
@@ -241,7 +238,7 @@
   width: 100%;
   min-height: 142px;
   padding: 17px;
-  border-color: $color-form-control-border;
+  border: 2px solid $color-form-control-border;
 }
 
 .order-form__info {
@@ -286,7 +283,7 @@
   }
 
   .order-form__fieldset {
-    &--even {
+    &--colored {
       background-color: $color-form-fieldset-background;
     }
   }
@@ -431,6 +428,12 @@
     grid-area: form-field;
   }
 
+  .order-form__title {
+    &::after {
+      content: initial;
+    }
+  }
+
   .order-form__list {
     &--direction {
       flex-direction: row;
@@ -457,7 +460,6 @@
     left: 1px;
     width: 52px;
     height: 52px;
-    background-size: 23px 23px;
   }
 
   .order-form__label--checkbox {
