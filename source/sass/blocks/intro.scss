@@ -15,6 +15,11 @@
   background-repeat: no-repeat;
   background-position: center -18px;
   background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/decor/mishka-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .intro__title {
@@ -47,6 +52,11 @@
     background-image: url("../img/decor/mishka-background-tablet.jpg");
     background-position: center -66px;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decor/mishka-background-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .intro__title {
@@ -69,6 +79,11 @@
     min-height: 680px;
     background-image: url("../img/decor/mishka-background-desktop.jpg");
     background-position: center -65px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decor/mishka-background-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .intro__title {
