@@ -14,7 +14,8 @@
 @media (min-width: $medium-width) {
   .catalog__wrapper {
     width: 768px;
-    padding: 50px;
+    padding: 30px 50px;
+    margin-bottom: 24px;
   }
 
   .catalog__list {
@@ -25,6 +26,8 @@
 @media (min-width: $large-width) {
   .catalog__wrapper {
     width: 1150px;
+    padding: 50px;
+    margin-bottom: 8px;
   }
 
   .catalog__list {

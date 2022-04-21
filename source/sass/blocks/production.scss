@@ -6,19 +6,37 @@
     "production-text  "
     "production-button";
   grid-template-columns: 1fr;
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
-  padding: 30px;
+  margin-bottom: 58px;
+  padding: 20px 0 32px;
+  border: 1px solid $color-video-border;
 }
 
 .production__title {
+  position: relative;
   grid-area: production-title;
   margin: 0;
   margin-bottom: 26px;
+  padding-left: 90px;
   font-size: 17px;
   line-height: math.div(24, 17);
   font-weight: 700;
   color: $color-title;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    content: "";
+    width: 32px;
+    height: 22px;
+    background-image: url("../../img/video/video-camera.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(-50%);
+  }
 }
 
 .production__video {
@@ -33,6 +51,7 @@
   grid-area: production-text;
   margin: 0;
   margin-bottom: 40px;
+  padding-left: 34px;
   font-size: 13px;
   line-height: math.div(24, 13);
 }
@@ -41,7 +60,7 @@
   grid-area: production-button;
   justify-self: center;
   width: 192px;
-  padding: 18px 10px;
+  padding: 16px 10px;
   line-height: math.div(16, 18);
 }
 
@@ -52,21 +71,31 @@
       "production-title "
       "production-text  "
       "production-button";
-    width: 768px;
-    padding: 50px;
+    width: 668px;
+    margin-bottom: 64px;
+    padding: 0;
+    padding-bottom: 46px;
   }
 
   .production__video {
     width: 668px;
     height: 455px;
+    margin-bottom: 40px;
   }
 
   .production__title {
+    margin-bottom: 24px;
+    padding-left: 106px;
     font-size: 20px;
     line-height: math.div(24, 20);
+
+    &::before {
+      left: 40px;
+    }
   }
 
   .production__text {
+    padding: 0 40px;
     font-size: 15px;
     line-height: math.div(30, 15);
   }
@@ -85,17 +114,39 @@
       "production-video production-text  "
       "production-video production-button";
     grid-template-columns: 684px 1fr;
-    column-gap: 80px;
-    width: 1150px;
+    grid-template-rows: min-content 1fr auto;
+    column-gap: 76px;
+    width: 1050px;
+    margin-bottom: 102px;
+    padding: 0;
   }
 
   .production__video {
     width: 682px;
     height: 455px;
+    margin: 0;
+  }
+
+  .production__title {
+    width: 230px;
+    padding-left: 0;
+    padding-top: 60px;
+    margin-top: 36px;
+
+    &::before {
+      top: 20px;
+      left: 0;
+    }
+  }
+
+  .production__text {
+    padding: 0;
+    margin: 0;
   }
 
   .production__order {
-    align-self: start;
+    justify-self: start;
     width: 230px;
+    margin-bottom: 60px;
   }
 }

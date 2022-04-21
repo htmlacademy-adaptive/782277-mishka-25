@@ -36,21 +36,21 @@ $color-link: $gray-darkest;
 $color-shadow-line: $gray-light;
 $color-transparent: $transparent;
 
-// Цвет button
+// button
 $color-button-text: $gray-darken;
 $color-button-background: $color-inverse;
 $color-button-border: $gray-darken;
 
-// Цвет header
+// header
 $color-nav-button-icon: $gray-darkest;
 $color-nav-button-background: $transparent;
 $color-search-button-background: $transparent;
 
-// Цвет footer
+// footer
 $color-footer-background: $gray-lighten;
 $color-footer-shadow-line: $gray;
 
-// Цвет modal
+// modal
 $color-modal-veil: rgba($color-inverse, 0.9);
 $color-modal-background: $color-inverse;
 $color-modal-border: $gray-dark;
@@ -60,29 +60,42 @@ $color-modal-item-cheked-border: $color-lighten;
 $color-modal-button-text: $color-inverse;
 $color-modal-button-background: $color-lighten;
 
-// Цвет index-intro
+// index-intro
 $color-intro-background: $gray-lightest;
 
-// Цвет index-category
+// index-category
 $color-category-title: $color-inverse;
 $color-category-background-light: $color-lighten;
 $color-category-background-dark: $color-dark;
 
-// Цвет index-product
+// index-product
 $color-product-label: $color-lighten;
 
-// Цвет index-slider
+// index-slider
 $color-slider-button-background: $color-inverse;
 $color-slider-button-border: $gray-light;
 
-// Цвет index-contact
+// index-contact
 $color-contact-underline: $color-light;
 
-// Цвет catalog-video
-$color-video-button-background: $color-inverse;
+// catalog-intro
+$color-intro-inner-background: $gray-lighten;
 
-// Цвет form-order
+// catalog-product
+$color-product-border: $gray-light;
+$color-product-button-background: $transparent;
+
+// catalog-video
+$color-video-border: $gray-light;
+$color-video-button-background: $transparent;
+
+// form-order
 $color-form-fieldset-title: $color-lighten;
 $color-form-fieldset-background: $gray-lighten;
 $color-form-label: $gray-darkest;
+$color-form-label-line: $color-light;
 $color-form-input: $gray-darkest;
+$color-form-input-border: $gray-darkest;
+$color-form-control-radio: $color-light;
+$color-form-control-border: $gray-darken;
+$color-form-control-background: $transparent;

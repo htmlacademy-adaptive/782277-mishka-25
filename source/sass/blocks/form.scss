@@ -1,1 +1,15 @@
-// Код который будет полезен, возможно
+.form__wrapper {
+  margin-bottom: 56px;
+}
+
+@media (min-width: $medium-width) {
+  .form__wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .form__wrapper {
+    margin-bottom: 46px;
+  }
+}

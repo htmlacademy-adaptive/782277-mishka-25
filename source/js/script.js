@@ -16,51 +16,64 @@ navigationToggle.addEventListener('click', function () {
 
 // Оживление модального окна
 let modal = document.querySelector('.modal');
-let orderButton = document.querySelector('.js-order');
 
-orderButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modal.classList.remove('modal--hidden');
-});
+if (modal) {
+  let orderButtons = document.querySelectorAll('.js-order');
 
-document.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
-    modal.classList.add('modal--hidden');
+  for (let i = 0; i < orderButtons.length; i++) {
+    orderButtons[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      modal.classList.remove('modal--hidden');
+    });
   }
-});
+
+  modal.addEventListener('click', function (evt) {
+    if (evt.target === modal) {
+      modal.classList.add('modal--hidden');
+    }
+  });
+
+  document.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Escape') {
+      modal.classList.add('modal--hidden');
+    }
+  });
+}
 
 // Оживление слайдера с отзывами
 let slideList = document.querySelector('.slider__list');
-let slideItems = slideList.querySelectorAll('.slider__item');
 
-let sliderControl = document.querySelector('.slider__toggles');
-let sliderPrevious = sliderControl.querySelector('.slider__toggle--previous');
-let sliderForward = sliderControl.querySelector('.slider__toggle--forward');
+if (slideList) {
+  let slideItems = slideList.querySelectorAll('.slider__item');
+  let sliderControl = document.querySelector('.slider__toggles');
+  let sliderPrevious = sliderControl.querySelector('.slider__toggle--previous');
+  let sliderForward = sliderControl.querySelector('.slider__toggle--forward');
 
-let slideIndex = 1;
+  let slideIndex = 1;
 
-let showSlide = function (index) {
-  if (index < 1) {
-    slideIndex = slideItems.length;
-  } else if (index > slideItems.length) {
-    slideIndex = 1;
-  }
+  let showSlide = function (index) {
+    if (index < 1) {
+      slideIndex = slideItems.length;
+    } else if (index > slideItems.length) {
+      slideIndex = 1;
+    }
 
-  for (let i = 0; i < slideItems.length; i++) {
-    slideItems[i].classList.add('slider__item--hidden');
-  }
+    for (let i = 0; i < slideItems.length; i++) {
+      slideItems[i].classList.add('slider__item--hidden');
+    }
 
-  slideItems[slideIndex - 1].classList.remove('slider__item--hidden');
-};
+    slideItems[slideIndex - 1].classList.remove('slider__item--hidden');
+  };
 
-let changeSlide = function (index) {
-  showSlide(slideIndex += index);
-};
+  let changeSlide = function (index) {
+    showSlide(slideIndex += index);
+  };
 
-sliderPrevious.addEventListener('click', function () {
-  changeSlide(-1);
-});
+  sliderPrevious.addEventListener('click', function () {
+    changeSlide(-1);
+  });
 
-sliderForward.addEventListener('click', function () {
-  changeSlide(1);
-});
+  sliderForward.addEventListener('click', function () {
+    changeSlide(1);
+  });
+}
