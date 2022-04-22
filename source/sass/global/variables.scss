@@ -82,12 +82,13 @@ $color-contact-underline: $color-light;
 $color-intro-inner-background: $gray-lighten;
 
 // catalog-product
-$color-product-border: $gray-light;
 $color-product-button-background: $transparent;
+$color-product-border: $gray-light;
 
 // catalog-video
-$color-video-border: $gray-light;
+$color-video-player-background: $gray-dark;
 $color-video-button-background: $transparent;
+$color-video-border: $gray-light;
 
 // form-order
 $color-form-fieldset-title: $color-lighten;
@@ -97,5 +98,5 @@ $color-form-label-line: $color-light;
 $color-form-input: $gray-darkest;
 $color-form-input-border: $gray-darkest;
 $color-form-control-radio: $color-light;
-$color-form-control-border: $gray-darken;
 $color-form-control-background: $transparent;
+$color-form-control-border: $gray-darken;
