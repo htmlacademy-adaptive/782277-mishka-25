@@ -57,6 +57,28 @@
     height: 1px;
     background-color: $color-contact-underline;
   }
+
+  &:hover {
+    color: $color-contact-mail-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: $color-contact-mail-active;
+    outline: none;
+  }
+
+  &:hover::after {
+    background-color: $color-contact-underline-hover;
+  }
+
+  &:active::after {
+    background-color: $color-contact-underline-active;
+  }
 }
 
 .contacts__address {

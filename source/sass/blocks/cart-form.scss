@@ -32,10 +32,14 @@
   text-align: center;
   text-transform: uppercase;
   border: 2px solid $color-modal-item-border;
+
+  &:hover {
+    border-color: $color-modal-item-border-hover;
+  }
 }
 
 .cart-form__input:checked ~ .cart-form__label {
-  border-color: $color-modal-item-cheked-border;
+  border-color: $color-modal-item-border-active;
 }
 
 .cart-form__input {
@@ -57,6 +61,14 @@
   background-color: $color-modal-button-background;
   border: 0;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-modal-button-background-hover;
+  }
+
+  &:active {
+    background-color: $color-modal-button-background-active;
+  }
 }
 
 @media (min-width: $medium-width) {

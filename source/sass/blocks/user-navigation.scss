@@ -17,6 +17,20 @@
   @include link-style;
   padding: 28px;
   padding-left: 76px;
+
+  &:hover {
+    color: $color-title-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: -6px;
+  }
+
+  &:active {
+    color: $color-title-active;
+    outline: none;
+  }
 }
 
 @media (min-width: $medium-width) {

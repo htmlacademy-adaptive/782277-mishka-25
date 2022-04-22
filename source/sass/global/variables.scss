@@ -32,13 +32,20 @@ $color-darken: #46c1ae;
 $color-main: $gray-darken;
 $color-background: $color-inverse;
 $color-title: $gray-darkest;
+$color-title-hover: rgba($color-title, 0.6);
+$color-title-active: rgba($color-title, 0.3);
 $color-link: $gray-darkest;
 $color-shadow-line: $gray-light;
+$color-outline: $color-dark;
+$color-outline-dark: $gray-darken;
 $color-transparent: $transparent;
 
 // button
 $color-button-text: $gray-darken;
+$color-button-text-hover: $color-inverse;
+$color-button-text-active: rgba($color-button-text-hover, 0.3);
 $color-button-background: $color-inverse;
+$color-button-background-hover: $gray-darken;
 $color-button-border: $gray-darken;
 
 // header
@@ -54,11 +61,14 @@ $color-footer-shadow-line: $gray;
 $color-modal-veil: rgba($color-inverse, 0.9);
 $color-modal-background: $color-inverse;
 $color-modal-border: $gray-dark;
-$color-modal-shadow: rgba(0, 1, 1, 0.25);
-$color-modal-item-border: $gray-darken;
-$color-modal-item-cheked-border: $color-lighten;
+$color-modal-shadow: rgba($gray-darkest, 0.25);
+$color-modal-item-border: rgba($gray-darken, 0.1);
+$color-modal-item-border-hover: rgba($gray-darken, 0.3);
+$color-modal-item-border-active: $color-lighten;
 $color-modal-button-text: $color-inverse;
 $color-modal-button-background: $color-lighten;
+$color-modal-button-background-hover: $color-darken;
+$color-modal-button-background-active: $color-base;
 
 // index-intro
 $color-intro-background: $gray-lightest;
@@ -66,17 +76,25 @@ $color-intro-background: $gray-lightest;
 // index-category
 $color-category-title: $color-inverse;
 $color-category-background-light: $color-lighten;
+$color-category-background-light-hover: $color-base;
 $color-category-background-dark: $color-dark;
+$color-category-background-dark-hover: $color-darken;
 
 // index-product
 $color-product-label: $color-lighten;
 
-// index-slider
+// index-reviews-slider
+$color-reviews-mail-hover: $color-darken;
+$color-reviews-mail-active: $color-lighten;
 $color-slider-button-background: $color-inverse;
 $color-slider-button-border: $gray-light;
 
 // index-contact
+$color-contact-mail-hover: $color-darken;
+$color-contact-mail-active: $color-lighten;
 $color-contact-underline: $color-light;
+$color-contact-underline-hover: $color-darken;
+$color-contact-underline-active: rgba($color-contact-underline-hover, 0.1);
 
 // catalog-intro
 $color-intro-inner-background: $gray-lighten;
@@ -84,6 +102,7 @@ $color-intro-inner-background: $gray-lighten;
 // catalog-product
 $color-product-button-background: $transparent;
 $color-product-border: $gray-light;
+$color-product-shadow: rgba($gray-darkest, 0.1);
 
 // catalog-video
 $color-video-player-background: $gray-dark;
@@ -93,10 +112,14 @@ $color-video-border: $gray-light;
 // form-order
 $color-form-fieldset-title: $color-lighten;
 $color-form-fieldset-background: $gray-lighten;
-$color-form-label: $gray-darkest;
 $color-form-label-line: $color-light;
-$color-form-input: $gray-darkest;
 $color-form-input-border: $gray-darkest;
+$color-form-input-border-hover: $color-light;
+$color-form-input-border-focus: $color-darken;
+$color-form-input-border-active: $color-light;
 $color-form-control-radio: $color-light;
 $color-form-control-background: $transparent;
 $color-form-control-border: $gray-darken;
+$color-form-control-border-hover: $color-light;
+$color-form-control-border-focus: $color-light;
+$color-form-control-border-active: rgba($color-form-control-border, 0.3);

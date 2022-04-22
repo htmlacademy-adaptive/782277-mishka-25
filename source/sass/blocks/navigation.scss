@@ -18,6 +18,15 @@
   justify-self: center;
   min-height: 79px;
   padding: 22px;
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: -6px;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 .navigation__logo-image {

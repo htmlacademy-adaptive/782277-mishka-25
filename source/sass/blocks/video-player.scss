@@ -33,4 +33,13 @@
   background-size: contain;
   border: 0;
   cursor: pointer;
+
+  &:focus {
+    outline: 4px solid $color-outline-dark;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+  }
 }

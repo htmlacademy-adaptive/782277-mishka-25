@@ -165,18 +165,38 @@
   }
 }
 
+.order-form__item:focus-within .order-form__label::before {
+  border-color: $color-form-control-border-focus;
+}
+
 .order-form__label {
   position: relative;
   font-size: 17px;
   line-height: math.div(18, 17);
   font-weight: 700;
-  color: $color-form-label;
+  color: $color-title;
   cursor: pointer;
+
+  &:hover {
+    color: $color-title-hover;
+  }
+
+  &:active {
+    color: $color-title-active;
+  }
 }
 
 .order-form__label--radio {
   padding: 4px;
   padding-left: 60px;
+
+  &:hover::before {
+    border-color: $color-form-control-border-hover;
+  }
+
+  &:active::before {
+    border-color: $color-form-control-border-active;
+  }
 }
 
 .order-form__label--radio::before {
@@ -199,6 +219,14 @@
 .order-form__label--checkbox {
   padding: 10px;
   padding-left: 60px;
+
+  &:hover::before {
+    border-color: $color-form-control-border-hover;
+  }
+
+  &:active::before {
+    border-color: $color-form-control-border-active;
+  }
 }
 
 .order-form__label--checkbox::before {
@@ -227,10 +255,23 @@
   font-size: 17px;
   line-height: math.div(18, 17);
   font-weight: 400;
-  color: $color-form-input;
+  color: $color-main;
 
   &::placeholder {
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $color-form-input-border-hover;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-form-input-border-focus;
+  }
+
+  &:active {
+    border-color: $color-form-input-border-active;
   }
 }
 

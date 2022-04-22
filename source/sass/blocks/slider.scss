@@ -26,6 +26,15 @@
   &--forward {
     background-image: url("../img/decor/button-arrow-right.svg");
   }
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: -2px;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 @media (min-width: $medium-width) {
