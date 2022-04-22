@@ -171,6 +171,7 @@
   object-fit: contain;
   width: 86px;
   height: 35px;
+  margin: 0;
 }
 
 .navigation__toggle {
@@ -876,7 +877,7 @@
     content: "";
     width: 100%;
     height: 24px;
-    background-image: url("../img/decor/category-mask-zigzag-tablet.svg");
+    background-image: url("../img/decor/mask-zigzag-m.svg");
     background-repeat: repeat-x;
     background-position: center;
     background-size: contain;
@@ -906,7 +907,7 @@
   .intro::after {
     bottom: -18px;
     height: 34px;
-    background-image: url("../img/decor/category-mask-zigzag-desktop.svg");
+    background-image: url("../img/decor/mask-zigzag-xl.svg");
   }
 
   .intro__wrapper {
@@ -1000,7 +1001,7 @@
   left: 0;
   content: "";
   height: 6px;
-  background-image: url("../img/decor/wrapper-zigzag-mobile.svg");
+  background-image: url("../img/decor/mask-zigzag-s.svg");
   background-repeat: repeat-x;
   background-position: center;
   background-size: contain;
@@ -1081,6 +1082,7 @@
   max-width: 100%;
   object-fit: contain;
   grid-area: product-image;
+  margin: 0;
   margin-bottom: 14px;
 }
 
@@ -1302,7 +1304,7 @@
   left: 0;
   content: "";
   height: 6px;
-  background-image: url("../img/decor/wrapper-zigzag-mobile.svg");
+  background-image: url("../img/decor/mask-zigzag-s.svg");
   background-repeat: repeat-x;
   background-position: center;
   background-size: contain;
@@ -1382,43 +1384,56 @@
     background-image: url("../img/decor/review-background-tablet.jpg");
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: 350px 457px;
+    background-size: 350px auto;
   }
   .reviews::after {
     height: 17px;
   }
-
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .reviews {
+    background-image: url("../img/decor/review-background-tablet@2x.jpg");
+    background-size: 350px auto;
+  }
+}
+@media (min-width: 768px) {
   .reviews__wrapper {
     grid-template-areas: "review-title .           review-button " "review-list  review-list .             " "review-list  review-list review-toggles";
     grid-template-columns: 300px 1fr 176px;
     width: 768px;
     padding: 84px 50px 100px;
   }
-
+}
+@media (min-width: 768px) {
   .reviews__title {
     margin-bottom: 38px;
   }
-
+}
+@media (min-width: 768px) {
   .reviews__list {
     grid-column: 1/-1;
   }
-
+}
+@media (min-width: 768px) {
   .reviews__text {
     margin-bottom: 62px;
     font-size: 17px;
     line-height: 1.7647058824;
   }
-
+}
+@media (min-width: 768px) {
   .reviews__author-name {
     margin-bottom: 2px;
     font-size: 18px;
     line-height: 1.3333333333;
   }
-
+}
+@media (min-width: 768px) {
   .reviews__toggles {
     z-index: 1;
   }
-
+}
+@media (min-width: 768px) {
   .reviews__write {
     width: 175px;
     margin-top: -4px;
@@ -1437,25 +1452,35 @@
     height: 23px;
     margin: 0 auto;
   }
-
+}
+@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1150px) and (min-resolution: 2dppx) {
+  .reviews {
+    background-image: url("../img/decor/review-background-desktop@2x.jpg");
+  }
+}
+@media (min-width: 1150px) {
   .reviews__wrapper {
     width: 1150px;
     padding: 80px 50px 154px 224px;
   }
-
+}
+@media (min-width: 1150px) {
   .reviews__title {
     margin-bottom: 34px;
   }
-
+}
+@media (min-width: 1150px) {
   .reviews__text {
     margin-bottom: 45px;
   }
-
+}
+@media (min-width: 1150px) {
   .reviews__author-name {
     font-size: 17px;
     line-height: 1.4117647059;
   }
-
+}
+@media (min-width: 1150px) {
   .reviews__write {
     margin: 0;
   }
@@ -1677,6 +1702,7 @@
   object-fit: contain;
   grid-area: map;
   width: 100%;
+  height: 100%;
   border: 0;
 }
 
@@ -1716,7 +1742,7 @@
     content: "";
     width: 100%;
     height: 24px;
-    background-image: url("../img/decor/category-mask-zigzag-tablet.svg");
+    background-image: url("../img/decor/mask-zigzag-m.svg");
     background-repeat: repeat-x;
     background-position: center;
     background-size: contain;
@@ -1732,7 +1758,7 @@
   .intro-inner::after {
     bottom: -18px;
     height: 34px;
-    background-image: url("../img/decor/category-mask-zigzag-inner-desktop.svg");
+    background-image: url("../img/decor/mask-zigzag-l.svg");
   }
 
   .intro-inner__wrapper {
@@ -1792,6 +1818,7 @@
   grid-area: card-image;
   width: 260px;
   height: 195px;
+  margin: 0;
 }
 
 .product-card__description {
@@ -1951,7 +1978,6 @@
   width: 260px;
   height: 150px;
   margin-bottom: 36px;
-  background-color: #c6c6c6;
 }
 
 .production__text {
@@ -2049,6 +2075,24 @@
 }
 .video-player {
   position: relative;
+  background-color: #c6c6c6;
+}
+
+.video-player__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.video-player__preview {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .video-player__play {
