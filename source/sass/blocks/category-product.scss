@@ -26,12 +26,40 @@
     background-size: 40px 62px;
   }
 
+  &--interior:hover {
+    background-color: $color-category-background-light-hover;
+  }
+
+  &--interior:focus {
+    outline: 2px solid $color-outline-dark;
+    outline-offset: -2px;
+  }
+
+  &--interior:active {
+    background-color: $color-category-background-light-hover;
+    outline: none;
+  }
+
   &--toy {
     background-color: $color-category-background-dark;
     background-image: url("../img/decor/category-toy.svg");
     background-repeat: no-repeat;
     background-position: center right 27px;
     background-size: 60px 60px;
+  }
+
+  &--toy:hover {
+    background-color: $color-category-background-dark-hover;
+  }
+
+  &--toy:focus {
+    outline: 2px solid $color-outline-dark;
+    outline-offset: -2px;
+  }
+
+  &--toy:active {
+    background-color: $color-category-background-dark-hover;
+    outline: none;
   }
 }
 

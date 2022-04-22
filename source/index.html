@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page__body">
@@ -12,12 +16,14 @@
       <div class="header__wrapper">
         <nav class="header__navigation navigation navigation--closed navigation--nojs">
 
-          <a class="navigation__logo" href="index.html">
-            <picture class="navigation__logo-image">
-              <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-header-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-header-tablet.svg">
-              <img class="navigation__logo-image" src="img/logo/mishka-logo-header-mobile.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
-            </picture>
+          <a class="navigation__logo">
+            <figure class="navigation__logo-image">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-header-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-header-tablet.svg">
+                <img class="navigation__logo-image" src="img/logo/mishka-logo-header-mobile.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+              </picture>
+            </figure>
           </a>
 
           <button class="navigation__toggle" type="button">
@@ -108,11 +114,13 @@
             </div>
           </dl>
 
-          <picture class="product__image">
-            <source media="(min-width: 1150px)" srcset="img/products/knitted-basket-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/products/knitted-basket-tablet.jpg">
-            <img class="product__image" src="img/products/knitted-basket-mobile.jpg" width="260" height="315" alt="Вязаная корзинка.">
-          </picture>
+          <figure class="product__image">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/products/knitted-basket-desktop.jpg 1x, img/products/knitted-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/products/knitted-basket-tablet.jpg 1x, img/products/knitted-basket-tablet@2x.jpg 2x">
+              <img class="product__image" src="img/products/knitted-basket-mobile.jpg" srcset="img/products/knitted-basket-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаная корзинка.">
+            </picture>
+          </figure>
 
           <p class="product__cost">Цена: 990 руб.</p>
           <a class="product__order button js-order" href="#">Заказать</a>
@@ -188,12 +196,14 @@
           </address>
 
           <div class="contacts__map map">
-            <picture class="map__image">
-              <source media="(min-width: 1150px)" srcset="img/map/map-image-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="img/map/map-image-tablet.jpg">
-              <img class="map__image" src="img/map/map-image-mobile.jpg" width="320" height="454" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101.">
-            </picture>
-            <iframe class="map__image-interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A937005b5aa464ca67ec6f70f95455d8847deb4e7d0db682106c3b0e6cfd910d0&amp;source=constructor" width="320" height="454"></iframe>
+            <figure class="map__image">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/map/map-image-desktop.jpg 1x, img/map/map-image-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/map/map-image-tablet.jpg 1x, img/map/map-image-tablet@2x.jpg 2x">
+                <img class="map__image" src="img/map/map-image-mobile.jpg" srcset="img/map/map-image-mobile@2x.jpg 2x" width="320" height="454" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101.">
+              </picture>
+            </figure>
+            <iframe class="map__image-interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A937005b5aa464ca67ec6f70f95455d8847deb4e7d0db682106c3b0e6cfd910d0&amp;source=constructor" width="320" height="454" tabindex="-1"></iframe>
           </div>
 
           <a class="contacts__write button" href="#">Напишите нам</a>
@@ -204,7 +214,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
 
-        <a class="footer__logo" href="index.html">
+        <a class="footer__logo">
           <img class="footer__logo-image" src="img/logo/mishka-logo-footer.svg" width="102" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
         </a>
 

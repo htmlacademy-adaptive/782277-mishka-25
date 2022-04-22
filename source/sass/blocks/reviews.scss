@@ -8,7 +8,7 @@
     left: 0;
     content: "";
     height: 6px;
-    background-image: url("../img/decor/wrapper-zigzag-mobile.svg");
+    background-image: url("../img/decor/mask-zigzag-s.svg");
     background-repeat: repeat-x;
     background-position: center;
     background-size: contain;
@@ -51,7 +51,7 @@
 }
 
 .reviews__author {
-  display: block;
+  display: inline-block;
   margin-bottom: 32px;
   font-style: normal;
 }
@@ -66,9 +66,24 @@
 
 .reviews__author-email {
   @include link-style;
+  display: inline-block;
   font-size: 17px;
   line-height: math.div(30, 17);
   color: $color-main;
+
+  &:hover {
+    color: $color-reviews-mail-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: $color-reviews-mail-active;
+    outline: none;
+  }
 }
 
 .reviews__toggles {
@@ -89,10 +104,15 @@
     background-image: url("../img/decor/review-background-tablet.jpg");
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: 350px 457px;
+    background-size: 350px auto;
 
     &::after {
       height: 17px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decor/review-background-tablet@2x.jpg");
+      background-size: 350px auto;
     }
   }
 
@@ -148,6 +168,10 @@
       width: 1050px;
       height: 23px;
       margin: 0 auto;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decor/review-background-desktop@2x.jpg");
     }
   }
 

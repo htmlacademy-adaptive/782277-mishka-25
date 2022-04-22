@@ -4,6 +4,14 @@
     "card-image      "
     "card-description";
   grid-template-columns: 1fr;
+
+  &:hover {
+    box-shadow: 0 6px 10px $color-product-shadow;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $color-product-shadow;
+  }
 }
 
 .product-card__image {
@@ -11,6 +19,7 @@
   grid-area: card-image;
   width: 260px;
   height: 195px;
+  margin: 0;
 }
 
 .product-card__description {
@@ -48,6 +57,21 @@
 
 .product-card__link {
   @include link-style;
+  display: inline-block;
+
+  &:hover {
+    color: $color-title-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: $color-title-active;
+    outline: none;
+  }
 }
 
 .product-card__property {
@@ -80,6 +104,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 19px;
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 @media (min-width: $medium-width) and (max-width: $large-width) {

@@ -13,4 +13,19 @@
   background-color: $color-button-background;
   border: 2px solid $color-button-border;
   cursor: pointer;
+
+  &:hover {
+    color: $color-button-text-hover;
+    background-color: $color-button-background-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: $color-button-text-active;
+    outline: none;
+  }
 }

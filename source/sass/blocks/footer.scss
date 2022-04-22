@@ -16,6 +16,15 @@
 
 .footer__logo {
   display: none;
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 .footer__logo-image {

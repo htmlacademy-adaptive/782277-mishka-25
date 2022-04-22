@@ -3,6 +3,15 @@
   display: flex;
   align-items: center;
   padding: 24px;
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: -2px;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 .copyright__text {

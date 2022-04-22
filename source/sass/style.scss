@@ -1,13 +1,14 @@
-// stylelint-disable
+// stylelint-disable no-invalid-position-at-import-rule
 
 @use "sass:math";
 
-// Общие блоки проекта
+// Глобальные стили и блоки
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
 
+// Общие блоки проекта
 @import "blocks/page.scss";
 @import "blocks/main-container.scss";
 @import "blocks/title.scss";
@@ -27,12 +28,12 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 
-// Основное модальное окно проекта
+// Основное модальное окно
 @import "blocks/modal.scss";
 @import "blocks/modal-content.scss";
 @import "blocks/cart-form.scss";
 
-// Главная страница проекта
+// Главная страница
 @import "blocks/intro.scss";
 @import "blocks/category-product.scss";
 @import "blocks/product.scss";
@@ -53,4 +54,4 @@
 @import "blocks/form.scss";
 @import "blocks/order-form.scss";
 
-// stylelint-enable
+// stylelint-enable no-invalid-position-at-import-rule

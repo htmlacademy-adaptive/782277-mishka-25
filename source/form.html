@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page__body">
@@ -13,11 +17,13 @@
         <nav class="header__navigation navigation navigation--closed navigation--nojs">
 
           <a class="navigation__logo" href="index.html">
-            <picture class="navigation__logo-image">
-              <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-header-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-header-tablet.svg">
-              <img class="navigation__logo-image" src="img/logo/mishka-logo-header-mobile.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
-            </picture>
+            <figure class="navigation__logo-image">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-header-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-header-tablet.svg">
+                <img class="navigation__logo-image" src="img/logo/mishka-logo-header-mobile.svg" width="86" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+              </picture>
+            </figure>
           </a>
 
           <button class="navigation__toggle" type="button">
@@ -30,7 +36,7 @@
                 <a class="site-navigation__link" href="catalog.html">Каталог товаров</a>
               </li>
               <li class="site-navigation__item">
-                <a class="site-navigation__link" href="form.html">Вязание на заказ</a>
+                <a class="site-navigation__link">Вязание на заказ</a>
               </li>
             </ul>
 
