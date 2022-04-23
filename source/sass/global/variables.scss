@@ -72,6 +72,7 @@ $color-modal-button-background-active: $color-base;
 
 // index-intro
 $color-intro-background: $gray-lightest;
+$color-intro-inner-background: $gray-lighten;
 
 // index-category
 $color-category-title: $color-inverse;
@@ -95,9 +96,6 @@ $color-contact-mail-active: $color-lighten;
 $color-contact-underline: $color-light;
 $color-contact-underline-hover: $color-darken;
 $color-contact-underline-active: rgba($color-contact-underline-hover, 0.1);
-
-// catalog-intro
-$color-intro-inner-background: $gray-lighten;
 
 // catalog-product
 $color-product-button-background: $transparent;

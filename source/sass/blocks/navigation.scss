@@ -5,7 +5,6 @@
     ".        nav-logo nav-button"
     "nav-menu nav-menu nav-menu  ";
   grid-template-columns: 82px 1fr 82px;
-  align-items: center;
   font-size: 17px;
   line-height: math.div(24, 17);
   font-weight: 700;
@@ -68,6 +67,22 @@
     display: none;
   }
 
+  .navigation--closed .navigation__toggle::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    background-color: $color-nav-button-icon;
+    box-shadow:
+      0 6px 0 0 $color-nav-button-icon,
+      0 -6px 0 0 $color-nav-button-icon;
+  }
+
   .navigation--opened .navigation__toggle {
     &::before,
     &::after {
@@ -90,22 +105,6 @@
     &::after {
       transform: rotate(-45deg);
     }
-  }
-
-  .navigation--closed .navigation__toggle::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: "";
-    width: 20px;
-    height: 2px;
-    margin: auto;
-    background-color: $color-nav-button-icon;
-    box-shadow:
-      0 6px 0 0 $color-nav-button-icon,
-      0 -6px 0 0 $color-nav-button-icon;
   }
 
   .navigation--nojs .navigation__menu {
@@ -142,6 +141,7 @@
   }
 
   .navigation__menu {
+    position: static;
     display: contents;
   }
 

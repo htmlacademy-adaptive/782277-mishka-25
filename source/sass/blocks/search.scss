@@ -1,24 +1,17 @@
-.search {
-  position: relative;
-}
-
-.search__icon {
-  position: absolute;
-  top: 50%;
-  left: 32px;
-  transform: translateY(-50%);
+.search__link {
+  background-image: url("../img/decor/menu-search.svg");
+  background-repeat: no-repeat;
+  background-position: 32px 50%;
+  background-size: 18px 18px;
 }
 
 @media (min-width: $medium-width) {
-  .search__icon {
-    left: 36px;
-  }
-
   .search__link {
-    width: 84px;
-    height: 89px;
+    width: 82px;
+    min-height: 88px;
     padding: 26px 24px;
     background-color: $color-search-button-background;
+    background-position: 50%;
   }
 
   .search__text {
