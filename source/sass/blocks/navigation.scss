@@ -5,7 +5,6 @@
     ".        nav-logo nav-button"
     "nav-menu nav-menu nav-menu  ";
   grid-template-columns: 82px 1fr 82px;
-  align-items: center;
   font-size: 17px;
   line-height: math.div(24, 17);
   font-weight: 700;
@@ -19,13 +18,18 @@
   min-height: 79px;
   padding: 22px;
 
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
   &:focus {
     outline: 2px solid $color-outline;
     outline-offset: -6px;
   }
 
-  &:active {
+  &[href]:active {
     outline: none;
+    opacity: 0.3;
   }
 }
 
@@ -46,6 +50,25 @@
   background-color: $color-nav-button-background;
   border: 0;
   cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: -6px;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.6;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .navigation__menu {
@@ -62,10 +85,25 @@
 }
 
 // Классы для оживления меню-бургера
-
 @media (max-width: $small-width-only) {
   .navigation--closed .navigation__menu {
     display: none;
+  }
+
+  .navigation--closed .navigation__toggle::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    background-color: $color-nav-button-icon;
+    box-shadow:
+      0 6px 0 0 $color-nav-button-icon,
+      0 -6px 0 0 $color-nav-button-icon;
   }
 
   .navigation--opened .navigation__toggle {
@@ -90,22 +128,6 @@
     &::after {
       transform: rotate(-45deg);
     }
-  }
-
-  .navigation--closed .navigation__toggle::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: "";
-    width: 20px;
-    height: 2px;
-    margin: auto;
-    background-color: $color-nav-button-icon;
-    box-shadow:
-      0 6px 0 0 $color-nav-button-icon,
-      0 -6px 0 0 $color-nav-button-icon;
   }
 
   .navigation--nojs .navigation__menu {
@@ -142,6 +164,7 @@
   }
 
   .navigation__menu {
+    position: static;
     display: contents;
   }
 
@@ -164,7 +187,7 @@
     grid-template-areas:
       "nav-site    nav-logo    nav-user   "
       "nav-submenu nav-submenu nav-submenu";
-    grid-template-columns: 1fr 200px 1fr;
+    grid-template-columns: 1fr 165px 1fr;
   }
 
   .navigation__logo {

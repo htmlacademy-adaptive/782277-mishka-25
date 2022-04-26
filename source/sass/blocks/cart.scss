@@ -1,22 +1,29 @@
-.cart {
+.cart__link {
   position: relative;
+}
+
+.cart__link:hover .cart__icon {
+  fill: $color-cart-icon-hover;
+  opacity: 1;
+}
+
+.cart__link:active .cart__icon {
+  opacity: 0.3;
 }
 
 .cart__icon {
   position: absolute;
   top: 50%;
   left: 30px;
+  width: 21px;
+  height: 18px;
+  fill: $color-cart-icon;
   transform: translateY(-50%);
+  opacity: 0.2;
 }
 
 @media (min-width: $medium-width) {
   .cart__link {
     padding-left: 82px;
-  }
-}
-
-@media (min-width: $large-width) {
-  .cart__link {
-    padding-left: 84px;
   }
 }

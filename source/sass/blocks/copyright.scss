@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
   padding: 24px;
+  color: $color-title;
+
+  &:hover {
+    color: $color-title-hover;
+  }
 
   &:focus {
     outline: 2px solid $color-outline;
@@ -10,8 +15,17 @@
   }
 
   &:active {
+    color: $color-title-active;
     outline: none;
   }
+}
+
+.copyright:hover .copyright__image {
+  fill: $color-footer-copyright-logo-hover;
+}
+
+.copyright:active .copyright__image {
+  opacity: 0.3;
 }
 
 .copyright__text {
@@ -20,13 +34,13 @@
   font-size: 19px;
   line-height: math.div(18, 19);
   font-weight: 700;
-  color: $color-title;
 }
 
 .copyright__image {
   @include image-normalize;
   width: 27px;
   height: 34px;
+  fill: $color-footer-copyright-logo;
 }
 
 @media (min-width: $medium-width) {
@@ -34,5 +48,11 @@
     width: 200px;
     margin-right: -10px;
     padding: 10px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .copyright {
+    margin-right: -8px;
   }
 }

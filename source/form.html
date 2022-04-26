@@ -12,7 +12,7 @@
   </head>
 
   <body class="page__body">
-    <header class="header header--inner">
+    <header class="header">
       <div class="header__wrapper">
         <nav class="header__navigation navigation navigation--closed navigation--nojs">
 
@@ -31,7 +31,7 @@
           </button>
 
           <div class="navigation__menu">
-            <ul class="navigation__site site-navigation">
+            <ul class="navigation__site site-navigation site-navigation--inner">
               <li class="site-navigation__item">
                 <a class="site-navigation__link" href="catalog.html">Каталог товаров</a>
               </li>
@@ -44,23 +44,23 @@
               <li class="user-navigation__item search">
                 <a class="user-navigation__link search__link" href="#">
                   <span class="search__text">Поиск по сайту</span>
-                  <svg class="search__icon" width="18" height="18" viewBox="0 0 18 18" fill="#000" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"/>
+                  <svg class="search__icon" width="18" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/decor/decor-sprite.svg#search-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="user-navigation__item cart">
                 <a class="user-navigation__link cart__link" href="#">
                   <span class="cart__text">Корзина: <span class="cart__counter">пока пуста</span></span>
-                  <svg class="cart__icon" width="21" height="18" viewBox="0 0 21 18" fill="#000" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"/>
+                  <svg class="cart__icon" width="21" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/decor/decor-sprite.svg#cart-icon"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
 
-          <div class="navigation__submenu header-submenu">
+          <div class="navigation__submenu header-submenu header-submenu--inner">
             <ul class="header-submenu__list">
               <li class="header-submenu__item">
                 <a class="header-submenu__link" href="#">Новые поступления</a>
@@ -69,7 +69,7 @@
                 <a class="header-submenu__link" href="#">Распродажа</a>
               </li>
             </ul>
-            <p class="header-submenu__delivery">Бесплатная доставка по России</p>
+            <p class="header-submenu__offer">Бесплатная доставка по России</p>
           </div>
         </nav>
       </div>
@@ -165,7 +165,12 @@
               <div class="order-form__wrapper">
                 <h3 class="order-form__title">Тел</h3>
                 <label class="order-form__label visually-hidden" for="customer-phone">Введите ваш телефон.</label>
-                <input class="order-form__input" id="customer-phone" type="tel" name="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <p class="order-form__input-wrapper">
+                  <input class="order-form__input" id="customer-phone" type="tel" name="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <svg class="order-form__input-icon" width="25" height="24" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/decor/decor-sprite.svg#phone-icon"></use>
+                  </svg>
+                </p>
               </div>
             </fieldset>
 
@@ -173,7 +178,12 @@
               <div class="order-form__wrapper">
                 <h3 class="order-form__title">E-mail</h3>
                 <label class="order-form__label visually-hidden" for="customer-email">Введите ваш e-mail.</label>
-                <input class="order-form__input" id="customer-email" type="email" name="customer-email" placeholder="Ваш Email*" required>
+                <p class="order-form__input-wrapper">
+                  <input class="order-form__input" id="customer-email" type="email" name="customer-email" placeholder="Ваш Email*" required>
+                  <svg class="order-form__input-icon" width="32" height="21" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/decor/decor-sprite.svg#mail-icon"></use>
+                  </svg>
+                </p>
               </div>
             </fieldset>
 
@@ -199,30 +209,43 @@
       <div class="footer__wrapper">
 
         <a class="footer__logo" href="index.html">
-          <img class="footer__logo-image" src="img/logo/mishka-logo-footer.svg" width="102" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+          <svg class="footer__logo-image" width="102" height="35" role="img" aria-label="Интернет-магазин милых вещей - «Мишка».">
+            <use xlink:href="img/logo/logo-sprite.svg#mishka-logo-footer"></use>
+          </svg>
         </a>
 
         <ul class="footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в VKontakte.</span>
+              <svg class="social__icon" width="28" height="23" aria-hidden="true" focusable="false">
+                <use xlink:href="img/decor/decor-sprite.svg#vkontakte-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в YouTube.</span>
+              <svg class="social__icon" width="28" height="23" aria-hidden="true" focusable="false">
+                <use xlink:href="img/decor/decor-sprite.svg#youtube-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Telegram.</span>
+              <svg class="social__icon" width="28" height="23" aria-hidden="true" focusable="false">
+                <use xlink:href="img/decor/decor-sprite.svg#telegram-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>
 
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">Разработано</p>
-          <img class="copyright__image" src="img/logo/htmlacademy-logo.svg" width="27" height="35" alt="Логотип HTML Academy.">
+          <svg class="copyright__image" width="27" height="35" role="img" aria-label="Логотип HTML Academy.">
+            <use xlink:href="img/logo/logo-sprite.svg#htmlacademy-logo"></use>
+          </svg>
         </a>
       </div>
     </footer>

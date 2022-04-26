@@ -35,6 +35,8 @@ $color-title: $gray-darkest;
 $color-title-hover: rgba($color-title, 0.6);
 $color-title-active: rgba($color-title, 0.3);
 $color-link: $gray-darkest;
+
+// Общие декоративные цвета
 $color-shadow-line: $gray-light;
 $color-outline: $color-dark;
 $color-outline-dark: $gray-darken;
@@ -51,11 +53,21 @@ $color-button-border: $gray-darken;
 // header
 $color-nav-button-icon: $gray-darkest;
 $color-nav-button-background: $transparent;
+$color-search-icon: $gray-darkest;
+$color-search-icon-hover: $color-lighten;
 $color-search-button-background: $transparent;
+$color-cart-icon: $gray-darkest;
+$color-cart-icon-hover: $color-lighten;
 
 // footer
 $color-footer-background: $gray-lighten;
 $color-footer-shadow-line: $gray;
+$color-footer-mishka-logo: $gray-darkest;
+$color-footer-mishka-logo-hover: $color-darken;
+$color-footer-social-icon: $gray-darkest;
+$color-footer-social-icon-hover: $color-darken;
+$color-footer-copyright-logo: $gray-darkest;
+$color-footer-copyright-logo-hover: $color-darken;
 
 // modal
 $color-modal-veil: rgba($color-inverse, 0.9);
@@ -72,13 +84,16 @@ $color-modal-button-background-active: $color-base;
 
 // index-intro
 $color-intro-background: $gray-lightest;
+$color-intro-inner-background: $gray-lighten;
 
 // index-category
 $color-category-title: $color-inverse;
 $color-category-background-light: $color-lighten;
 $color-category-background-light-hover: $color-base;
+$color-category-background-light-active: $color-base;
 $color-category-background-dark: $color-dark;
 $color-category-background-dark-hover: $color-darken;
+$color-category-background-dark-active: $color-darken;
 
 // index-product
 $color-product-label: $color-lighten;
@@ -91,15 +106,18 @@ $color-slider-button-border: $gray-light;
 
 // index-contact
 $color-contact-mail-hover: $color-darken;
-$color-contact-mail-active: $color-lighten;
+$color-contact-mail-active: $color-darken;
 $color-contact-underline: $color-light;
 $color-contact-underline-hover: $color-darken;
 $color-contact-underline-active: rgba($color-contact-underline-hover, 0.1);
-
-// catalog-intro
-$color-intro-inner-background: $gray-lighten;
+$color-map-info-text: $color-light;
+$color-map-info-background: $color-inverse;
+$color-map-info-border: $gray-dark;
+$color-map-info-shadow: rgba($gray-darkest, 0.25);
 
 // catalog-product
+$color-product-button-icon: $gray-darkest;
+$color-product-button-icon-hover: $color-lighten;
 $color-product-button-background: $transparent;
 $color-product-border: $gray-light;
 $color-product-shadow: rgba($gray-darkest, 0.1);
@@ -113,6 +131,8 @@ $color-video-border: $gray-light;
 $color-form-fieldset-title: $color-lighten;
 $color-form-fieldset-background: $gray-lighten;
 $color-form-label-line: $color-light;
+$color-form-input-icon: $gray-darkest;
+$color-form-input-icon-hover: $color-light;
 $color-form-input-border: $gray-darkest;
 $color-form-input-border-hover: $color-light;
 $color-form-input-border-focus: $color-darken;

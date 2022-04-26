@@ -34,12 +34,18 @@
   border: 0;
   cursor: pointer;
 
+  &:hover {
+    transform: scale(1.2);
+  }
+
   &:focus {
-    outline: 4px solid $color-outline-dark;
+    outline: 3px solid $color-outline-dark;
     outline-offset: 2px;
   }
 
   &:active {
+    transform: scale(0.8);
     outline: none;
+    opacity: 0.8;
   }
 }
