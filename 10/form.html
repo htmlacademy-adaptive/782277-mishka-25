@@ -45,11 +45,17 @@
               <li class="user-navigation__item search">
                 <a class="user-navigation__link search__link" href="#">
                   <span class="search__text">Поиск по сайту</span>
+                  <svg class="search__icon" width="18" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/decor/decor-sprite.svg#search-icon"></use>
+                  </svg>
                 </a>
               </li>
               <li class="user-navigation__item cart">
                 <a class="user-navigation__link cart__link" href="#">
                   <span class="cart__text">Корзина: <span class="cart__counter">пока пуста</span></span>
+                  <svg class="cart__icon" width="21" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/decor/decor-sprite.svg#cart-icon"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -160,7 +166,12 @@
               <div class="order-form__wrapper">
                 <h3 class="order-form__title">Тел</h3>
                 <label class="order-form__label visually-hidden" for="customer-phone">Введите ваш телефон.</label>
-                <input class="order-form__input" id="customer-phone" type="tel" name="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <p class="order-form__input-wrapper">
+                  <input class="order-form__input" id="customer-phone" type="tel" name="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <svg class="order-form__input-icon" width="25" height="24" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/decor/decor-sprite.svg#phone-icon"></use>
+                  </svg>
+                </p>
               </div>
             </fieldset>
 
@@ -168,7 +179,12 @@
               <div class="order-form__wrapper">
                 <h3 class="order-form__title">E-mail</h3>
                 <label class="order-form__label visually-hidden" for="customer-email">Введите ваш e-mail.</label>
-                <input class="order-form__input" id="customer-email" type="email" name="customer-email" placeholder="Ваш Email*" required>
+                <p class="order-form__input-wrapper">
+                  <input class="order-form__input" id="customer-email" type="email" name="customer-email" placeholder="Ваш Email*" required>
+                  <svg class="order-form__input-icon" width="32" height="21" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/decor/decor-sprite.svg#mail-icon"></use>
+                  </svg>
+                </p>
               </div>
             </fieldset>
 
@@ -194,30 +210,43 @@
       <div class="footer__wrapper">
 
         <a class="footer__logo" href="index.html">
-          <img class="footer__logo-image" src="img/logo/mishka-logo-footer.svg" width="102" height="35" alt="Интернет-магазин милых вещей - «Мишка».">
+          <svg class="footer__logo-image" width="102" height="35" role="img" aria-label="Интернет-магазин милых вещей - «Мишка».">
+            <use xlink:href="img/logo/logo-sprite.svg#mishka-logo-footer"></use>
+          </svg>
         </a>
 
         <ul class="footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в VKontakte.</span>
+              <svg class="social__icon" width="28" height="23" aria-hidden="true" focusable="false">
+                <use xlink:href="img/decor/decor-sprite.svg#vkontakte-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в YouTube.</span>
+              <svg class="social__icon" width="28" height="23" aria-hidden="true" focusable="false">
+                <use xlink:href="img/decor/decor-sprite.svg#youtube-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Telegram.</span>
+              <svg class="social__icon" width="28" height="23" aria-hidden="true" focusable="false">
+                <use xlink:href="img/decor/decor-sprite.svg#telegram-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>
 
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">Разработано</p>
-          <img class="copyright__image" src="img/logo/htmlacademy-logo.svg" width="27" height="35" alt="Логотип HTML Academy.">
+          <svg class="copyright__image" width="27" height="35" role="img" aria-label="Логотип HTML Academy.">
+            <use xlink:href="img/logo/logo-sprite.svg#htmlacademy-logo"></use>
+          </svg>
         </a>
       </div>
     </footer>
