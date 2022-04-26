@@ -27,10 +27,19 @@
   }
 }
 
+.footer__logo:hover .footer__logo-image {
+  fill: $color-footer-mishka-logo-hover;
+}
+
+.footer__logo:active .footer__logo-image {
+  opacity: 0.3;
+}
+
 .footer__logo-image {
   @include image-normalize;
   width: 102px;
   height: 34px;
+  fill: $color-footer-mishka-logo;
 }
 
 .footer__social {
@@ -44,7 +53,7 @@
 @media (min-width: $medium-width) {
   .footer__wrapper {
     grid-template-areas: "footer-logo footer-social footer-copyright";
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 194px 1fr 200px;
     justify-items: start;
     align-items: center;
     width: 768px;
@@ -53,9 +62,13 @@
   }
 
   .footer__logo {
-    display: block;
+    display: flex;
     margin-left: -10px;
     padding: 10px;
+  }
+
+  .footer__logo-image {
+    margin: auto;
   }
 
   .footer__copyright {

@@ -1,4 +1,4 @@
-// Оживление меню-бургера
+// Меню-бургер
 let navigation = document.querySelector('.navigation');
 let navigationToggle = navigation.querySelector('.navigation__toggle');
 
@@ -14,7 +14,7 @@ navigationToggle.addEventListener('click', function () {
   }
 });
 
-// Оживление модального окна
+// Модальное окно
 let modal = document.querySelector('.modal');
 
 if (modal) {
@@ -40,7 +40,7 @@ if (modal) {
   });
 }
 
-// Оживление слайдера с отзывами
+// Слайдер с отзывами
 let slideList = document.querySelector('.slider__list');
 
 if (slideList) {

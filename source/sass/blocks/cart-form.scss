@@ -66,8 +66,14 @@
     background-color: $color-modal-button-background-hover;
   }
 
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: 2px;
+  }
+
   &:active {
     background-color: $color-modal-button-background-active;
+    outline: none;
   }
 }
 

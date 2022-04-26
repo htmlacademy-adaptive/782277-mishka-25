@@ -18,13 +18,18 @@
   min-height: 79px;
   padding: 22px;
 
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
   &:focus {
     outline: 2px solid $color-outline;
     outline-offset: -6px;
   }
 
-  &:active {
+  &[href]:active {
     outline: none;
+    opacity: 0.3;
   }
 }
 
@@ -45,6 +50,25 @@
   background-color: $color-nav-button-background;
   border: 0;
   cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: -6px;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.6;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .navigation__menu {
@@ -61,7 +85,6 @@
 }
 
 // Классы для оживления меню-бургера
-
 @media (max-width: $small-width-only) {
   .navigation--closed .navigation__menu {
     display: none;
@@ -164,7 +187,7 @@
     grid-template-areas:
       "nav-site    nav-logo    nav-user   "
       "nav-submenu nav-submenu nav-submenu";
-    grid-template-columns: 1fr 200px 1fr;
+    grid-template-columns: 1fr 165px 1fr;
   }
 
   .navigation__logo {

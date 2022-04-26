@@ -10,7 +10,7 @@
   width: 320px;
   min-height: 488px;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 2px;
   background-color: $color-intro-background;
   background-image: url("../img/decor/mishka-background-mobile.jpg");
   background-repeat: no-repeat;
@@ -79,6 +79,7 @@
   .intro__wrapper {
     width: 1150px;
     min-height: 680px;
+    margin-bottom: 22px;
     background-image: url("../img/decor/mishka-background-desktop.jpg");
     background-position: center -65px;
 

@@ -1,17 +1,38 @@
 .search__link {
-  background-image: url("../img/decor/menu-search.svg");
-  background-repeat: no-repeat;
-  background-position: 32px 50%;
-  background-size: 18px 18px;
+  position: relative;
+}
+
+.search__link:hover .search__icon {
+  fill: $color-search-icon-hover;
+  opacity: 1;
+}
+
+.search__link:active .search__icon {
+  opacity: 0.3;
+}
+
+.search__icon {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  width: 18px;
+  height: 18px;
+  fill: $color-search-icon;
+  transform: translateY(-50%);
+  opacity: 0.2;
 }
 
 @media (min-width: $medium-width) {
   .search__link {
     width: 82px;
-    min-height: 88px;
+    height: 88px;
     padding: 26px 24px;
     background-color: $color-search-button-background;
-    background-position: 50%;
+  }
+
+  .search__icon {
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .search__text {

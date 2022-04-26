@@ -1,6 +1,9 @@
 .map {
+  position: relative;
   display: grid;
   grid-template-areas: "map";
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .map__image {
@@ -17,6 +20,37 @@
   width: 100%;
   height: 100%;
   border: 0;
+
+  &--disabled {
+    pointer-events: none;
+  }
+}
+
+.map__info {
+  position: absolute;
+  display: none;
+  width: 200px;
+  padding: 10px;
+  padding-left: 50px;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  color: $color-darken;
+  background-color: $color-map-info-background;
+  background-image: url("../img/decor/advantages-icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+  background-size: 35px 34px;
+  border: 1px solid $color-modal-border;
+  box-shadow: 0 5px 10px $color-modal-shadow;
+
+  &--active {
+    display: block;
+  }
+
+  &--disabled {
+    display: none;
+  }
 }
 
 @media (min-width: $medium-width) {

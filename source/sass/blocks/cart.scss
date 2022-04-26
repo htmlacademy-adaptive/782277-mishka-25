@@ -1,8 +1,25 @@
 .cart__link {
-  background-image: url("../img/decor/menu-cart.svg");
-  background-repeat: no-repeat;
-  background-position: 30px 50%;
-  background-size: 21px 18px;
+  position: relative;
+}
+
+.cart__link:hover .cart__icon {
+  fill: $color-cart-icon-hover;
+  opacity: 1;
+}
+
+.cart__link:active .cart__icon {
+  opacity: 0.3;
+}
+
+.cart__icon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: 21px;
+  height: 18px;
+  fill: $color-cart-icon;
+  transform: translateY(-50%);
+  opacity: 0.2;
 }
 
 @media (min-width: $medium-width) {
