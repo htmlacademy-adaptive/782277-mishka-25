@@ -2,7 +2,6 @@
   position: relative;
   display: grid;
   grid-template-areas: "map";
-  overflow: hidden;
   cursor: pointer;
 }
 
@@ -10,7 +9,7 @@
   @include image-normalize;
   grid-area: map;
   width: 320px;
-  height: 454px;
+  height: 455px;
   margin: 0 auto;
 }
 
@@ -26,23 +25,27 @@
   }
 }
 
-.map__info {
+.map__tooltip {
   position: absolute;
+  top: 10%;
+  left: 50%;
   display: none;
   width: 200px;
+  margin: 0;
   padding: 10px;
   padding-left: 50px;
   font-size: 15px;
   line-height: 1.2;
   text-align: center;
-  color: $color-darken;
-  background-color: $color-map-info-background;
+  color: $color-map-tooltip-text;
+  background-color: $color-map-tooltip-background;
   background-image: url("../img/decor/advantages-icon-2.svg");
   background-repeat: no-repeat;
   background-position: center left 10px;
   background-size: 35px 34px;
-  border: 1px solid $color-modal-border;
-  box-shadow: 0 5px 10px $color-modal-shadow;
+  border: 1px solid $color-map-tooltip-border;
+  box-shadow: 0 5px 10px $color-map-tooltip-shadow;
+  transform: translateX(-50%);
 
   &--active {
     display: block;

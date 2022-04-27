@@ -110,10 +110,10 @@ $color-contact-mail-active: $color-darken;
 $color-contact-underline: $color-light;
 $color-contact-underline-hover: $color-darken;
 $color-contact-underline-active: rgba($color-contact-underline-hover, 0.1);
-$color-map-info-text: $color-light;
-$color-map-info-background: $color-inverse;
-$color-map-info-border: $gray-dark;
-$color-map-info-shadow: rgba($gray-darkest, 0.25);
+$color-map-tooltip-text: $color-lighten;
+$color-map-tooltip-background: $color-inverse;
+$color-map-tooltip-border: $gray-dark;
+$color-map-tooltip-shadow: rgba($gray-darkest, 0.25);
 
 // catalog-product
 $color-product-button-icon: $gray-darkest;
