@@ -239,11 +239,11 @@
 
 .order-form__label--radio::before {
   position: absolute;
-  top: 50%;
-  left: -1px;
+  top: 45%;
+  left: 0;
   content: "";
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   background-color: $color-form-control-background;
   border: 2px solid $color-form-control-border;
   border-radius: 50%;
@@ -316,7 +316,7 @@
 .order-form__textarea {
   width: 100%;
   min-height: 142px;
-  padding: 17px;
+  padding: 16px;
   border: 2px solid $color-form-control-border;
 }
 
@@ -550,9 +550,10 @@
   }
 
   .order-form__label--radio::before {
-    left: 1px;
-    width: 52px;
-    height: 52px;
+    top: 50%;
+    left: 2px;
+    width: 50px;
+    height: 50px;
   }
 
   .order-form__label--checkbox {
@@ -570,6 +571,10 @@
   .order-form__textarea {
     font-size: 19px;
     line-height: math.div(18, 19);
+  }
+
+  .order-form__textarea {
+    padding: 14px;
   }
 
   .order-form__info {
