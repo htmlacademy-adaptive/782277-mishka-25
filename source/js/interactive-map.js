@@ -1,4 +1,4 @@
-// Яндекс карта
+// Интерактивная карта
 let map = document.querySelector('.map');
 let interactiveMap = map.querySelector('.map__image-interactive');
 interactiveMap.classList.add('map__image-interactive--disabled');
