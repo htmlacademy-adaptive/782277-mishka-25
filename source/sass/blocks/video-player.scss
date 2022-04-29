@@ -39,6 +39,14 @@
   }
 
   &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
     outline: 3px solid $color-outline-dark;
     outline-offset: 2px;
   }

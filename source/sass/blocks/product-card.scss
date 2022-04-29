@@ -19,6 +19,14 @@
   grid-area: card-image;
 
   &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
     outline: 2px solid $color-outline;
     outline-offset: -2px;
   }
@@ -68,6 +76,14 @@
   }
 
   &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
     outline: 2px solid $color-outline;
     outline-offset: 2px;
   }
@@ -115,6 +131,14 @@
   background-color: $color-product-button-background;
 
   &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
     outline: 2px solid $color-outline;
     outline-offset: 2px;
   }
