@@ -1,6 +1,7 @@
 .copyright {
   @include link-style;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   padding: 24px;
   color: $color-title;
@@ -37,6 +38,7 @@
 }
 
 .copyright__text {
+  max-width: 130px;
   margin: 0;
   margin-right: 26px;
   font-size: 19px;
@@ -53,7 +55,7 @@
 
 @media (min-width: $medium-width) {
   .copyright {
-    width: 200px;
+    width: 210px;
     margin-right: -10px;
     padding: 10px;
   }
