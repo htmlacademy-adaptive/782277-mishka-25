@@ -12,14 +12,22 @@
   margin: 0 auto;
   margin-bottom: 2px;
   background-color: $color-intro-background;
-  background-image: url("../img/decor/mishka-background-mobile.jpg");
+  background-image: url("../img/decor/mishka-background-mobile.webp");
   background-repeat: no-repeat;
   background-position: center -18px;
   background-size: contain;
 
+  .no-webp & {
+    background-image: url("../img/decor/mishka-background-mobile.jpg");
+  }
+
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/decor/mishka-background-mobile@2x.jpg");
+    background-image: url("../img/decor/mishka-background-mobile@2x.webp");
     background-size: 320px auto;
+
+    .no-webp & {
+      background-image: url("../img/decor/mishka-background-mobile@2x.jpg");
+    }
   }
 }
 
@@ -51,13 +59,21 @@
   .intro__wrapper {
     width: 768px;
     min-height: 680px;
-    background-image: url("../img/decor/mishka-background-tablet.jpg");
+    background-image: url("../img/decor/mishka-background-tablet.webp");
     background-position: center -66px;
     background-size: cover;
 
+    .no-webp & {
+      background-image: url("../img/decor/mishka-background-tablet.jpg");
+    }
+
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/decor/mishka-background-tablet@2x.jpg");
+      background-image: url("../img/decor/mishka-background-tablet@2x.webp");
       background-size: 768px auto;
+
+      .no-webp & {
+        background-image: url("../img/decor/mishka-background-tablet@2x.jpg");
+      }
     }
   }
 
@@ -80,12 +96,20 @@
     width: 1150px;
     min-height: 680px;
     margin-bottom: 22px;
-    background-image: url("../img/decor/mishka-background-desktop.jpg");
+    background-image: url("../img/decor/mishka-background-desktop.webp");
     background-position: center -65px;
 
+    .no-webp & {
+      background-image: url("../img/decor/mishka-background-desktop.jpg");
+    }
+
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/decor/mishka-background-desktop@2x.jpg");
+      background-image: url("../img/decor/mishka-background-desktop@2x.webp");
       background-size: 1150px auto;
+
+      .no-webp & {
+        background-image: url("../img/decor/mishka-background-desktop@2x.jpg");
+      }
     }
   }
 
