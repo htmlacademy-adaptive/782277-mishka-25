@@ -32,6 +32,7 @@
   text-align: center;
   text-transform: uppercase;
   border: 2px solid $color-modal-item-border;
+  cursor: pointer;
 
   &:hover {
     border-color: $color-modal-item-border-hover;
@@ -40,6 +41,12 @@
 
 .cart-form__input:checked ~ .cart-form__label {
   border-color: $color-modal-item-border-active;
+}
+
+.cart-form__input:disabled ~ .cart-form__label {
+  border-color: $color-modal-item-border;
+  opacity: 0.5;
+  cursor: default;
 }
 
 .cart-form__input {

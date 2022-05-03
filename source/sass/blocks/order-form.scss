@@ -26,6 +26,7 @@
   border: 0;
 }
 
+// Тип продукции
 .order-form__fieldset--type {
   margin-bottom: 10px;
 }
@@ -43,6 +44,7 @@
   }
 }
 
+// Цвет продукции
 .order-form__fieldset--color {
   margin-bottom: 10px;
 }
@@ -60,6 +62,7 @@
   }
 }
 
+// Данные о заказчике
 .order-form__fieldset--user {
   margin-bottom: 10px;
 }
@@ -84,6 +87,7 @@
   border-bottom: 2px solid $color-form-input-border;
 }
 
+// Телефон заказчика
 .order-form__fieldset--phone {
   margin-bottom: 35px;
 }
@@ -115,16 +119,7 @@
   opacity: 0.2;
 }
 
-.order-form__input-wrapper:hover .order-form__input-icon {
-  fill: $color-form-input-icon-hover;
-  opacity: 1;
-}
-
-.order-form__input-wrapper:focus-within .order-form__input-icon {
-  fill: $color-form-input-icon-focus;
-  opacity: 1;
-}
-
+// Электронный адрес заказчика
 .order-form__fieldset--mail {
   margin-bottom: 35px;
 }
@@ -160,12 +155,29 @@
   opacity: 0.2;
 }
 
+// Пожелания заказчика
 .order-form__fieldset--wish {
   margin-bottom: 16px;
 }
 
 .order-form__fieldset--wish .order-form__title {
   margin-bottom: 22px;
+}
+
+// Стилизация состояний иконок в полях формы телефон и email
+.order-form__input-wrapper:hover .order-form__input-icon {
+  fill: $color-form-input-icon-hover;
+  opacity: 1;
+}
+
+.order-form__input-wrapper:focus-within .order-form__input-icon {
+  fill: $color-form-input-icon-focus;
+  opacity: 1;
+}
+
+.order-form__input:disabled ~ .order-form__input-icon {
+  fill: $color-form-input-icon;
+  opacity: 0.2;
 }
 
 .order-form__title {
@@ -210,10 +222,6 @@
   }
 }
 
-.order-form__item:focus-within .order-form__label::before {
-  border-color: $color-form-control-border-focus;
-}
-
 .order-form__label {
   position: relative;
   font-size: 17px;
@@ -231,6 +239,7 @@
   }
 }
 
+// Стилизация радио кнопок
 .order-form__label--radio {
   padding: 4px;
   padding-left: 60px;
@@ -261,6 +270,7 @@
   background-image: radial-gradient(circle closest-side at center, $color-form-control-radio 40%, $color-form-control-background 41%);
 }
 
+// Стилизация чекбоксов
 .order-form__label--checkbox {
   padding: 10px;
   padding-left: 60px;
@@ -293,6 +303,22 @@
   background-size: 23px 16px;
 }
 
+// Общая силизация радио кнопок и чекбоксов при focus и disabled
+.order-form__item:focus-within .order-form__label::before {
+  border-color: $color-form-control-border-focus;
+}
+
+.order-form__input:disabled + .order-form__label {
+  color: $color-title;
+  opacity: 0.3;
+  cursor: default;
+}
+
+.order-form__input:disabled + .order-form__label::before {
+  border-color: $color-form-control-border;
+}
+
+// Стилизация состояния input и textarea
 .order-form__input,
 .order-form__textarea {
   font-family: $font-input;
@@ -301,6 +327,7 @@
   line-height: math.div(18, 17);
   font-weight: 400;
   color: $color-main;
+  cursor: pointer;
 
   &::placeholder {
     opacity: 0.3;
@@ -317,6 +344,12 @@
 
   &:active {
     border-color: $color-form-input-border-active;
+  }
+
+  &:disabled {
+    border-color: $color-form-input-border;
+    opacity: 0.2;
+    cursor: default;
   }
 }
 
@@ -375,6 +408,7 @@
     }
   }
 
+  // Тип продукции
   .order-form__fieldset--type {
     margin-bottom: 15px;
   }
@@ -399,6 +433,7 @@
     }
   }
 
+  // Цвет продукции
   .order-form__fieldset--colore {
     margin-bottom: 0;
   }
@@ -430,6 +465,7 @@
     }
   }
 
+  // Данные о заказчике
   .order-form__fieldset--user .order-form__wrapper {
     padding: 40px 50px;
   }
@@ -458,6 +494,7 @@
     padding: 10px 18px;
   }
 
+  // Телефон заказчика
   .order-form__fieldset--phone {
     margin-bottom: 0;
   }
@@ -484,6 +521,7 @@
     right: 26px;
   }
 
+  // Электронный адрес заказчика
   .order-form__fieldset--mail {
     margin-bottom: 0;
   }
@@ -515,6 +553,7 @@
     margin-bottom: 2px;
   }
 
+  // Пожелания заказчика
   .order-form__fieldset--wish .order-form__wrapper {
     padding: 50px;
   }
@@ -626,6 +665,7 @@
     max-width: 90px;
   }
 
+  // Цвет продукции
   .order-form__fieldset--color .order-form__wrapper {
     grid-template-columns: 175px 1fr;
   }
@@ -636,14 +676,17 @@
     }
   }
 
+  // Телефон заказчика
   .order-form__fieldset--phone .order-form__input-icon {
     right: 10px;
   }
 
+  // Электронный адрес заказчика
   .order-form__fieldset--mail .order-form__input-icon {
     right: 6px;
   }
 
+  // Пожелания заказчика
   .order-form__fieldset--wish .order-form__wrapper {
     padding-bottom: 46px;
   }
