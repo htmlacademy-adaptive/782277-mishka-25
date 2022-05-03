@@ -327,7 +327,6 @@
   line-height: math.div(18, 17);
   font-weight: 400;
   color: $color-main;
-  cursor: pointer;
 
   &::placeholder {
     opacity: 0.3;
@@ -349,7 +348,6 @@
   &:disabled {
     border-color: $color-form-input-border;
     opacity: 0.2;
-    cursor: default;
   }
 }
 
