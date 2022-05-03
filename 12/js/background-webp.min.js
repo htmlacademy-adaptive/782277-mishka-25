@@ -1,0 +1,1 @@
+function checkWebP(A){let e=new Image;e.onload=e.onerror=function(){A(2==e.height)},e.src="data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA"}checkWebP((function(A){A?document.body.classList.add("webp"):document.body.classList.add("no-webp")}));
