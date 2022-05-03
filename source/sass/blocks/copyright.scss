@@ -1,6 +1,7 @@
 .copyright {
   @include link-style;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   padding: 24px;
   color: $color-title;
@@ -10,6 +11,14 @@
   }
 
   &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
     outline: 2px solid $color-outline;
     outline-offset: -2px;
   }
@@ -29,6 +38,7 @@
 }
 
 .copyright__text {
+  max-width: 130px;
   margin: 0;
   margin-right: 26px;
   font-size: 19px;
@@ -45,7 +55,7 @@
 
 @media (min-width: $medium-width) {
   .copyright {
-    width: 200px;
+    width: 210px;
     margin-right: -10px;
     padding: 10px;
   }

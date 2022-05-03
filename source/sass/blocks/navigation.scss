@@ -15,6 +15,7 @@
   @include link-style;
   grid-area: nav-logo;
   justify-self: center;
+  align-self: center;
   min-height: 79px;
   padding: 22px;
 
@@ -23,6 +24,14 @@
   }
 
   &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
     outline: 2px solid $color-outline;
     outline-offset: -6px;
   }
@@ -51,15 +60,6 @@
   border: 0;
   cursor: pointer;
 
-  &:focus {
-    outline: 2px solid $color-outline;
-    outline-offset: -6px;
-  }
-
-  &:active {
-    outline: none;
-  }
-
   &:hover::before,
   &:hover::after {
     opacity: 0.6;
@@ -68,6 +68,23 @@
   &:active::before,
   &:active::after {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    outline-offset: -6px;
+  }
+
+  &:active {
+    outline: none;
   }
 }
 

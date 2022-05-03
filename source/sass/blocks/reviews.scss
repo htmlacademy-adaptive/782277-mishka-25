@@ -75,6 +75,14 @@
   }
 
   &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
     outline: 2px solid $color-outline;
     outline-offset: 2px;
   }
@@ -100,18 +108,26 @@
   .reviews {
     margin: 0 auto;
     background-color: $color-background;
-    background-image: url("../img/decor/review-background-tablet.jpg");
+    background-image: url("../img/decor/review-background-tablet.webp");
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 350px auto;
+
+    .no-webp & {
+      background-image: url("../img/decor/review-background-tablet.jpg");
+    }
 
     &::after {
       height: 17px;
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/decor/review-background-tablet@2x.jpg");
+      background-image: url("../img/decor/review-background-tablet@2x.webp");
       background-size: 350px auto;
+
+      .no-webp & {
+        background-image: url("../img/decor/review-background-tablet@2x.jpg");
+      }
     }
   }
 
@@ -165,8 +181,12 @@
 @media (min-width: $large-width) {
   .reviews {
     width: 1150px;
-    background-image: url("../img/decor/review-background-desktop.jpg");
+    background-image: url("../img/decor/review-background-desktop.webp");
     background-position: top left 50px;
+
+    .no-webp & {
+      background-image: url("../img/decor/review-background-desktop.jpg");
+    }
 
     &::after {
       width: 1050px;
@@ -175,7 +195,12 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/decor/review-background-desktop@2x.jpg");
+      background-image: url("../img/decor/review-background-desktop@2x.webp");
+      background-size: 350px auto;
+
+      .no-webp & {
+        background-image: url("../img/decor/review-background-desktop@2x.jpg");
+      }
     }
   }
 

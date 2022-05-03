@@ -1,5 +1,5 @@
 // Шрифты проекта
-$font-main: "Open Sans", sans-serif;
+$font-main: "Open Sans", "Arial", sans-serif;
 $font-button: $font-main;
 $font-input: $font-main;
 
@@ -133,6 +133,7 @@ $color-form-fieldset-background: $gray-lighten;
 $color-form-label-line: $color-light;
 $color-form-input-icon: $gray-darkest;
 $color-form-input-icon-hover: $color-light;
+$color-form-input-icon-focus: $color-light;
 $color-form-input-border: $gray-darkest;
 $color-form-input-border-hover: $color-light;
 $color-form-input-border-focus: $color-darken;
